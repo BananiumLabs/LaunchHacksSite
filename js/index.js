@@ -36,4 +36,9 @@ $(document).ready(function () {
                 }
             }
         });
+
+    $('#downloadSP').click(function() {
+        console.log('Sponsor Packet Download Initialized!')
+    });
+
 });
