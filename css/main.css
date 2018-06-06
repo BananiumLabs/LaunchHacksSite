@@ -1,13 +1,20 @@
+/*
+##############################################
+# Created by Ben Cuan, Eric Qian, Akash Basu #
+#              LaunchHacks Site              #
+##############################################
+*/
+
 /* *****************
  * * GLOBAL STYLES *
  * ***************** */
 * {
-
+    font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace'
 }
 
-/* **************
+/* **********
  * * BANNER *
- * ************** */
+ * ********** */
 
  #banner-container {
     width: 100%;
@@ -33,8 +40,8 @@
         z-index: 0;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-            animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -52,4 +59,46 @@
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+} 
+
+/* *************
+ * * SELECTION *
+ * ************* */
+
+::selection {
+    background: transparent;
+    font-style: oblique;
+	text-shadow: #300101 0 0 1rem;
+	color: #940000;
+	-webkit-text-fill-color: #dd0202;
+}
+ 
+::-moz-selection {
+    background: transparent;
+    font-style: oblique;
+	text-shadow: #300101 0 0 1rem;
+	color: #940000;
+}
+
+/* ************
+ * * SPONSORS *
+ * ************ */
+.sponsor-img {
+    margin: 2vh;
+    height: 100%;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 15vw;
+}
+
+/* ********
+ * * TEAM *
+ * ******** */
+.team-img {
+    margin: 2vh;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    max-width: 10vw;
+    max-height: 10vw;
 }
