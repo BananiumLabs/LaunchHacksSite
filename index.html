@@ -51,17 +51,17 @@
 
 
 
-		<div>
-			<section id="top" class="container banner">
+		<div class="">
+			<section id="top" class="container banner ">
 				<canvas id="top-canvas"></canvas>
-					<img src="img/banner2.png"></img>
-					<h1>Launch Hacks I</h1>
+					<img src="img/banner2.png" class="d-flex justify-content-between"></img>
+					<h1 class="d-flex justify-content-between">Launch Hacks I</h1>
 					<p>
 						<date>October 27-28, 2018</date>
 						<br>
 						Location: TBA
 					</p>
-					<div id="apply">
+					<div id="apply" class="">
 						<h2>Apply</h2>
 						<div>
 							<a href="" class="hacker">Hacker</a>
@@ -136,13 +136,37 @@
 			</section>
 			
 			<section id="judging" class="container">
-				<div class="row">
+				<div class="">
 					<h2 class="row">Judging Criteria</h2>
-					<ul class="list-unstyled row">
+					<!-- <ul class="list-unstyled row">
 						<li>Practicality</li>
 						<li>Implementation</li>
 						<li></li>
-					</ul>
+					</ul> -->
+					<div class="row">
+						<table class="table table-dark col-6">
+							<thead class="thead-light">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Objective</th>
+									<th scope="col">Percentage</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="bg-primary">
+									<th scope="row">1</th>
+									<td>Practicality</td>
+									<td>40%</td>
+								</tr>
+									<tr class="bg-success">
+									<th scope="row">2</th>
+									<td>Implementation</td>
+									<td>40%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 					<h3>We will be following the Gavel System. </h3>
 				</div>
 			</section>
@@ -152,41 +176,76 @@
 					<h2>Schedule</h2>
 					<p>Coming soon!</p>
 				</div>
+				<div class="col-6">
+					<table class="table">
+						<thead class="thead-light">
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">First</th>
+								<th scope="col">Last</th>
+								<th scope="col">Handle</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 
 			<section id="team" class="container">
 				<div class="row">
-					<div>
-						<h2>Our Team</h2>
-						<div class="team-wrapper row medium-columns">
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Ben Cuan</h3>
-								<p>Sponsorship Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Eirc Qian</h3>
-								<p>Tech Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Alexey Kolechkin</h3>
-								<p>Outreach Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Omar Hossain</h3>
-								<p>Outreach Director</p>
-							</div>
+					<h2>Our Team</h2>
+				</div>
+				<div class="">
+					
+					<div class="team-wrapper row medium-columns">
+						<div class="col-sm">
+							<img src="https://avatars2.githubusercontent.com/u/15005763" class="team-img">
+							<h3>Ben Cuan</h3>
+							<p>Sponsorship Director</p>
+						</div>
+						<div class="col-sm">
+							<img src="https://avatars1.githubusercontent.com/u/5799869" class="team-img">
+							<h3>Eirc Qian</h3>
+							<p>Tech Director</p>
+						</div>
+						<div class="col-sm">
+							<img src="https://avatars2.githubusercontent.com/u/22230771" class="team-img">
+							<h3>Alexey Kolechkin</h3>
+							<p>Outreach Director</p>
+						</div>
+						<div class="col-sm">
+							<img src="https://avatars1.githubusercontent.com/u/15772933" class="team-img">
+							<h3>Omar Hossain</h3>
+							<p>Outreach Director</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
     	</div>
-    <footer>Made with <3 by Bananium Labs | 
-    Copyright © 2018 Launch Hacks I. All rights reserved.
+    <footer>
+		<p>Made with <3 by Bananium Labs</p>
+		<p>Copyright © 2018 Launch Hacks I. All rights reserved.</p>
+    
   
     	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
