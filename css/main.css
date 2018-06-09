@@ -12,6 +12,10 @@
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace'
 }
 
+.center-align {
+    align-content: center;
+}
+
 /* **********
  * * BANNER *
  * ********** */
@@ -68,7 +72,7 @@
 ::selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 1rem;
+	text-shadow: #300101 0 0 0.5rem;
 	color: #940000;
 	-webkit-text-fill-color: #dd0202;
 }
@@ -76,7 +80,7 @@
 ::-moz-selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 1rem;
+	text-shadow: #300101 0 0 0.5rem;
 	color: #940000;
 }
 
