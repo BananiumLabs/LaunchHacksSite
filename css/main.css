@@ -16,13 +16,32 @@
     align-content: center;
 }
 
+h2 {
+    font-family: Catamaran,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 70px !important;
+    letter-spacing: 1px;
+}
+
+.secondary {
+    background: rgb(223, 240, 253);
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+
 /* **********
  * * BANNER *
  * ********** */
 
- svg {
-     height: 140%;
+ #banner svg {
+     height: 120%;
+     width: 90%;
  }
+
  #banner {
     width: 100%;
     min-height: 100vh;
@@ -32,21 +51,35 @@
     left: 0;
 }
 
-#bannerIcon:hover {
-    transform: scale(1.5);
+
+#bannerLogo {
+    display:block;
+    cursor: default;
+    height: 55vh;
+    width: 100vw;
+    text-align: center;
 }
 
+
 #bannerInfo {
-        text-align: center;
-        font-size: 10vh;
-        min-height: 20vh;
+    text-align: center;
+    transform: translateY(-8vh);
+    font-size: 8vh;
+    min-height: 20vh;
+    z-index: 0;
+    opacity: 0;
+    animation: 1s ease-in-out 2s 1 banner-icon forwards;
 }
+
+#bannerInfo h3 {
+    font-size: 8vh;
+}
+
 #bannerButton {
     opacity: 0;
     animation: 1s ease-in-out 2s 1 banner-icon forwards;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    
 }
 
 #bannerButton a {
@@ -54,18 +87,15 @@
     width: auto;
 }
 
-#bannerLogo {
-        
-    display:block;
-    cursor: default;
-    height: 55vh;
-    width: 100vw;
-    text-align: center;
-    z-index: 0;
+#bannerButton:hover, #apply button:hover {
+    transform: scale(1.25);
+}
 
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    animation: fadein 2s;
+#apply button {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 @keyframes fadein {
@@ -102,16 +132,13 @@
 ::selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 0.5rem;
-	color: #940000;
-	-webkit-text-fill-color: #dd0202;
+	text-shadow: #011144 1px 1px 0.25rem;
 }
  
 ::-moz-selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 0.5rem;
-	color: #940000;
+	text-shadow: #011144 1px 1px 0.25rem;
 }
 
 /* ************
@@ -157,12 +184,4 @@ header.head .device-container{
     margin-right: auto;
     margin-left: auto;
     
-}
-
-h2 {
-    font-family: Catamaran,Helvetica,Arial,sans-serif;
-    font-weight: 200;
-    font-size: 70px !important;
-    letter-spacing: 1px;
-    color:#00A0EC
 }

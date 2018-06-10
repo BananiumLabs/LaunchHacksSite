@@ -48,20 +48,20 @@ $(document).ready(function () {
                         // Callback after animation
                         // Must change focus!
                         target.focus();
-                        if (target.is(":focus")) { // Checking if the target was focused
-                            return false;
-                        } else {
-                            target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                            target.focus(); // Set focus again
-                        };
+                        // if (target.is(":focus")) { // Checking if the target was focused
+                        //     return false;
+                        // } else {
+                        //     target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        //     target.focus(); // Set focus again
+                        // };
                     });
                 }
             }
         });
 
-    // $('#downloadSP').click(function() {
-    //     console.log('Sponsor Packet Download Initialized!')
-    // });
+    $('#downloadSP').click(function() {
+        console.log('Sponsor Packet Download Initialized!')
+    });
 
 
 });
