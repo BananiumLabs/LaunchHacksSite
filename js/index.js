@@ -7,19 +7,21 @@ $(document).ready(function () {
     const logo = new Vivus('bannerLogo', {
         file: '../img/logo-animated.svg',
         onReady: function(myVivus) {
-            myVivus.el.setAttribute('height', '100vh');
+            myVivus.el.setAttribute('height', '60vh');
             myVivus.play();
         }
     });
+    $('#bannerLogo').css('animation', 'shake 0.5s');
+    $('#bannerLogo').css('animation-iteration-count', 'infinite');
 
     // Animate navbar when scrolled
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() > 100) {
             $('.navbar').fadeIn();
         } else {
             $('.navbar').fadeOut();
         }
-    })();
+    });
 
     // --- Reserved END Custom jQuery---
 
