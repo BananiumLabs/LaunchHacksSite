@@ -38,16 +38,32 @@ section {
 
  #banner svg {
      height: 120%;
-     width: 90%;
  }
 
  #banner {
+    opacity: 0;
+    animation: 1s ease-in-out 0s 1 banner-icon forwards;
     width: 100%;
     min-height: 100vh;
     min-width: 100vw;
     position: relative;
     top: 0;
     left: 0;
+
+    /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+    background:
+        linear-gradient(
+      rgba(255, 255, 255, 0.25), 
+      rgba(255, 255, 255, 0.25)
+    ),
+
+        url('../img/banner-background.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
