@@ -12,7 +12,16 @@ $(document).ready(function () {
         }
     });
 
-    // --- Reserved ---
+    // Animate navbar when scrolled
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.navbar').fadeIn();
+        } else {
+            $('.navbar').fadeOut();
+        }
+    })();
+
+    // --- Reserved END Custom jQuery---
 
     console.log('init');
     // Select all links with hashes
