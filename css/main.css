@@ -29,6 +29,23 @@
     left: 0;
 }
 
+#bannerIcon:hover {
+    transform: scale(1.5);
+}
+
+#bannerIcon {
+    text-align: center;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    
+}
+
+#bannerIcon a {
+    color: #0091FA !important;
+    width: auto;
+}
+
 #banner-logo {
         
     display: flex;
