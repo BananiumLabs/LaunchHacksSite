@@ -10,8 +10,6 @@ $(document).ready(function () {
             myVivus.play();
         }
     });
-    $('#bannerLogo').css('animation', 'shake 0.5s');
-    $('#bannerLogo').css('animation-iteration-count', 'infinite');
 
     setTimeout(function() {
         $('#bannerLogo').html(`<img src="../img/banner2.svg">`);
