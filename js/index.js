@@ -10,12 +10,24 @@ $(document).ready(function () {
             myVivus.play();
         }
     });
+    $('#bannerLogo').css('animation', 'shake 0.5s');
+    $('#bannerLogo').css('animation-iteration-count', 'infinite');
 
     setTimeout(function() {
         $('#bannerLogo').html(`<img src="../img/banner2.svg">`);
     }, 4500)
 
-    // --- Reserved ---
+
+    // Animate navbar when scrolled
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.navbar').fadeIn();
+        } else {
+            $('.navbar').fadeOut();
+        }
+    });
+
+    // --- Reserved END Custom jQuery---
 
     console.log('init');
     // Select all links with hashes
