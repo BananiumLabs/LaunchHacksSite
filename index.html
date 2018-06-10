@@ -1,186 +1,403 @@
+
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Launch Hacks I</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-		<link href="css/main.css" rel="stylesheet">
-		
-	</head>
-	<body>
-		<header id="header">
-			<nav class="navbar navbar-inverse">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="">LaunchHacks I</a>
-					</div>
-					<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-					</ul>
-				</div>
 
-				<!-- <a href="#"></a>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#faq">FAQ</a></li>
-					<li><a href="#sponsors">Sponsors</a></li>
-					<li><a href="#schedule">Schedule</a></li>
-					<li><a href="#team">Team</a></li>
-				</ul> -->
-			</nav>
-		</header>
-		<div>
-			<section id="top" class="container banner">
-				<canvas id="top-canvas"></canvas>
-						<h1>Launch Hacks I</h1>
-						<p>
-							<date>October 27-28, 2018</date>
-							<br>
-							Location: TBA
+<head>
+	<title>Launch Hacks I</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	 crossorigin="anonymous">
+	<link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">LaunchHacks I</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="nav justify-content-end ml-auto ">
+				<li class="nav-item active ">
+					<a class="nav-link" href="#">
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#faq">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#sponsors">Sponsors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#schedule">Schedule</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#team">The Team</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link disabled " href="#">Live</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+	<header class="head">
+		<img id="bannerLogo" src="img/bannerattempt.png" width="1250" class="img-fluid mx-auto d-block" style="display:none;"></img>
+
+		<!-- <h1 class="d-flex justify-content-center">Launch Hacks I</h1> -->
+		<h3 class="text-center">
+			<date>October 27-28, 2018</date>
+			<br> Location: TBA </br>
+		</h3>
+	</header>
+	<section id="top" class="container banner">
+		<canvas id="top-canvas"></canvas>
+
+		<div id="apply">
+			<h2 class="text-center">Apply</h2>
+			<div class="text-center">
+				<button href="" class="btn btn-primary btn-lg text-center">Hacker</button>
+				<button href="" class="btn btn-primary btn-lg text-center">Mentor</button>
+				<button href="" class="btn btn-primary btn-lg text-center">Sponsor</button>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="container">
+		<div class="row">
+			<div class="col-sm">
+				<h2 class="text-center">About</h2>
+				<p class="text-center">Launch Hacks is a hackathon hosted at ___________ where</p>
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="container">
+		<div class="row">
+			<div>
+				<h2 class="text-center">FAQ</h2>
+				<div class="faq-wrapper row">
+					<div>
+						<h3>Who can attend?</h3>
+						<p>LaunchHacks is open to all high school students (9th to 12th grade). However, if you have already graduated from high
+							school, you can still attend as a mentor!</p>
+					</div>
+					<div>
+						<h3>What is the cost for admission?</h3>
+						<p>Attending LaunchHacks is and will always be free!</p>
+					</div>
+					<div>
+						<h3>What can my team do?</h3>
+						<p>Anything within reason! Whatever awesome project you decide to make is fair game! Software, hardware, crazy inventions,
+							or spooky voodoo magic are all allowed, but please remember that you will be presenting your project to expert judges
+							who will decide if you project is worth an award. More information about our judging criteria is avaliable below!</p>
+						<p>If you don't know what to make, feel free to come to any of our workshops or ask an organizer! We are here to help!</p>
+					</div>
+					<div>
+						<h3>How many people can be in a team?</h3>
+						<p>Teams can be a maximum of
+							<b>4</b> people. Solo teams are allowed, but we strongly encourage you to meet new people if you come by yourself! We
+							will do our best to help everyone find a team.</p>
+						<p>Don't know anyone? Take initiative and reach out to those who RSVP'd!</p>
+					</div>
+					<div>
+						<h3>Am I required to stay overnight?</h3>
+						<p>If you need to leave early for any reason, please let us know through
+							<a href="mailto:help@bananiumlabs.com">email</a> before the day of the event. For safety reasons we will not allow anyone to leave after
+							<b>8 PM</b>. Doors will open at
+							<b>9 AM</b> in time for judging. </p>
+					</div>
+					<div>
+						<h3>Do I have to know how to code?</h3>
+						<p>No. However, it might be a good opportunity to learn and get started! Please refer to the judging parameter for more
+							information.
 						</p>
-						<div id="apply">
-							<h2>Apply</h2>
-							<div>
-								<a href="" class="hacker">Hacker</a>
-								<a href="" class="mentor">Mentor</a>
-							</div>
-						</div>
 					</div>
-				</div>
-			</section>
-			<section id="about" class="container">
-				<div class="row">
-          <p>Insert Description Here.</p>
-          <p>More Description Here</p>
-				</div>
-			</section>
-			<section id="faq" class="container">
-				<div class="row">
 					<div>
-						<h2>FAQ</h2>
-						<div class="faq-wrapper row">
-							<div>
-								<h3>Who can attend?</h3>
-								<p>LaunchHacks is open to all high school students (9th to 12th grade). However, if you have already graduated from high school, you can still attend as a mentor!</p>
-							</div>
-							<div>
-								<h3>What is the cost for admission?</h3>
-								<p>Attending LaunchHacks is and will always be free!</p>
-							</div>
-							<div>
-								<h3>What can my team do?</h3>
-								<p>Anything within reason! Whatever awesome project you decide to make is fair game! Software, hardware, crazy inventions, or spooky voodoo magic are all allowed, but please remember that you will be presenting your project to expert judges who will decide if you project is worth an award. More information about our judging criteria is avaliable below!</p>
-								<p>If you don't know what to make, feel free to come to any of our workshops or ask an organizer! We are here to help!</p>
-							</div>
-							<div>
-								<h3>How many people can be in a team?</h3>
-								<p>Teams can be a maximum of <b>4</b> people. Solo teams are allowed, but we strongly encourage you to meet new people if you come by yourself! We will do our best to help everyone find a team.</p>
-								<p>Don't know anyone? Take initiative and reach out to those who RSVP'd!</p>
-							</div>
-							<div>
-								<h3>Am I required to stay overnight?</h3>
-								<p>If you need to leave early for any reason, please let us know through <a href="mailto:help@bananiumlabs.com">email</a> before the day of the event. For safety reasons we will not allow anyone to leave after <b>8 PM</b>. Doors will open at <b>9 AM</b> in time for judging. </p>
-							</div>
-							<div>
-								<h3>Do I have to know how to code?</h3>
-								<p>No. However, it might be a good opportunity to learn and get started! Please refer to the judging parameter for more information.</p>
-							</div>
-							<div>
-								<h3>How will our project be judged?</h3>
-								<p>All projects will be judged with the same criteria: originality, polish, difficulty of implementation, and viability as a product. We highly suggest that you treat your project like a product that you could potentially sell- rather than pitching just for the judges, pitch for everyone else, too!</p>
-							</div>
-							<div>
-								<h3>I have more questions, help me!</h3>
-								<p>Please feel free to join the official LaunchHacks Discord channel at: <a href="bananiumlabs.com/launch/discord">bananiumlabs.com/launch/discord</a> or feel tree to email us at <a href="mailto:help@bananiumlabs.com">help@bananiumlabs.com</a></p>
-							</div>
-						</div>
+						<h3>How will our project be judged?</h3>
+						<p>All projects will be judged with the same criteria: originality, polish, difficulty of implementation, and viability
+							as a product. We highly suggest that you treat your project like a product that you could potentially sell- rather
+							than pitching just for the judges, pitch for everyone else, too!</p>
+					</div>
+					<div>
+						<h3>I have more questions, help me!</h3>
+						<p>Please feel free to join the official LaunchHacks Discord channel at:
+							<a href="bananiumlabs.com/launch/discord">bananiumlabs.com/launch/discord</a> or feel tree to email us at
+							<a href="mailto:help@bananiumlabs.com">help@bananiumlabs.com</a>
+						</p>
 					</div>
 				</div>
-			</section>
-			<section id="sponsors" class="container">
-				<div class="row">
-					<div>
-					<h2>Our Sponsors</h2>
-					<div class="row small-columns">
-						<a href=""><img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img"></a>
-						<a href=""><img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img"></a>
-						<a href=""><img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img"></a>
-					</div>
+			</div>
+		</div>
+	</section>
+	<section id="sponsors" class="container">
+		<div class="row">
+			<div class="col-sm">
+				<h2 class="text-center">Our Sponsors</h2>
+				<div class="row small-columns">
+					<a href="">
+						<img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img">
+					</a>
+					<a href="">
+						<img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img">
+					</a>
+					<a href="">
+						<img src="img/placeholder.png" title="An Awesome Sponsor" class="sponsor-img">
+					</a>
+				</div>
 
-					<p>Interested in sponsoring and make an impact in the future generation? Contact us at <a href="mailto:sponsor@bananiumlabs.com">sponsor@bananiumlabs.com</a></p>
-					<!-- Change the email domain ^^^ -->
-					<button id="downloadSP"><a href="/resources/prospectus.pdf" target="_blank">And download our sponsor packet here!</a></button>
-				</div>
-			</section>
-			
-			<section id="judging" class="container">
-				<div class="row">
-					<h2 class="row">Judging Criteria</h2>
-					<ul class="list-unstyled row">
+				<p>Interested in sponsoring and make an impact in the future generation? Contact us at
+					<a href="mailto:sponsor@bananiumlabs.com">sponsor@bananiumlabs.com</a>
+				</p>
+				<!-- Change the email domain ^^^ -->
+				<button id="downloadSP">
+					<a href="/resources/prospectus.pdf" target="_blank">And download our sponsor packet here!</a>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="judging" class="container">
+		<div class="col-sm">
+			<h2 class="text-center">Judging Criteria</h2>
+			<!-- <ul class="list-unstyled row">
 						<li>Practicality</li>
 						<li>Implementation</li>
 						<li></li>
-					</ul>
-					<h3>We will be following the Gavel System. </h3>
-				</div>
-			</section>
-			
-			<section id="schedule" class="container">
-				<div class="row">
-					<h2>Schedule</h2>
-					<p>Coming soon!</p>
-				</div>
-			</section>
+					</ul> -->
+			<div class="row text-center">
 
-			<section id="team" class="container">
+				<table class="col-sm-6 col-sm-offset-3">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Objective</th>
+							<th scope="col">Percentage</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-primary">
+							<th scope="row">1</th>
+							<td>Practicality</td>
+							<td>40%</td>
+						</tr>
+						<tr class="bg-success">
+							<th scope="row">2</th>
+							<td>Implementation</td>
+							<td>40%</td>
+						</tr>
+						<tr class="bg-warning">
+							<th scope="row">3</th>
+							<td>Originality</td>
+							<td>20%</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<h3>We will be following the Gavel System. </h3>
+
+	</section>
+
+	<section id="schedule" class="container">
+		<div class="col-sm center-align">
+			<h2 class="text-center">Schedule</h2>
+		</div>
+		<div class="col-12">
+			<table class="table">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">Time</th>
+						<th scope="col">Event</th>
+						<th scope="col">Location</th>
+						<th scope="col">Host</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">8:00AM</th>
+						<td>Organizer Arrival</td>
+						<td>Main Entrance</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th scope="row">9:00AM</th>
+						<td>Door Opens</td>
+						<td>Main Entrance</td>
+						<td>LaunchHacks Team</td>
+					</tr>
+					<tr>
+						<th scope="row">10:00AM</th>
+						<td>Opening Ceremony</td>
+						<td>Presentation Area</td>
+						<td>LaunchHacks Team</td>
+					</tr>
+					<tr>
+						<th scope="row">10:45AM</th>
+						<td>Start Hacking!</td>
+						<td>Computer Area</td>
+						<td>Everyone</td>
+					</tr>
+					<tr>
+						<th scope="row">10:45AM</th>
+						<td>Team Mixer</td>
+						<td>Presentation Area</td>
+						<td>LaunchHacks Team</td>
+					</tr>
+					<tr>
+						<th scope="row">11:00AM - 12:00PM</th>
+						<td>Workshop - Intro to Hackathons</td>
+						<td>Presentation Area</td>
+						<td>LaunchHacks Team</td>
+					</tr>
+					<tr>
+						<th scope="row">12:45PM - 1:30PM</th>
+						<td>Lunch Time!</td>
+						<td>Food Room</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">1:45PM</th>
+						<td>Workshops Begin! (Details TBA)</td>
+						<td>Presentation Area</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">6:30PM</th>
+						<td>Dinner Time</td>
+						<td>Food Room</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">12:00AM</th>
+						<td>Midnight Snack!</td>
+						<td>Food Room</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">6:30AM</th>
+						<td>Breakfast!</td>
+						<td>Food Room</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">9:00PM</th>
+						<td>Hacking ends!</td>
+						<td>Everywhere</td>
+						<td>Everyone</td>
+					</tr>
+					<tr>
+						<th scope="row">9:30PM</th>
+						<td>Judging!</td>
+						<td>Computer Area</td>
+						<td>TBA</td>
+					</tr>
+					<tr>
+						<th scope="row">12:00PM</th>
+						<td>Closing Ceremony</td>
+						<td>Presentation Area</td>
+						<td>Everyone</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</section>
+
+
+	<section id="team" class="container">
+		<div class="col-sm">
+			<h2 class="text-center">Our Team</h2>
+		</div>
+		<div class="">
+
+			<div class="team-wrapper medium-columns">
+
 				<div class="row">
-					<div>
-						<h2>Our Team</h2>
-						<div class="team-wrapper row medium-columns">
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Ben Cuan</h3>
-								<p>Sponsorship Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Eirc Qian</h3>
-								<p>Tech Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Alexey Kolechkin</h3>
-								<p>Outreach Director</p>
-							</div>
-							<div>
-								<img src="img/placeholder.png" class="team-img">
-								<h3>Omar Hossain</h3>
-								<p>Outreach Director</p>
-							</div>
-						</div>
+
+
+
+					<div class="col-sm-3">
+						<img src="https://avatars2.githubusercontent.com/u/22230771" class="team-img">
+						<h3>Alexey Kolechkin</h3>
+						<p>Outreach Director</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="https://avatars2.githubusercontent.com/u/33015666?s=460&v=4" class="team-img">
+						<h3>Akash Basu</h3>
+						<p>Tech/Ops</p>
+					</div>
+					
+					<div class="col-sm-3">
+						<img src="https://avatars0.githubusercontent.com/u/8906527?s=400&v=4" class="team-img">
+						<h3>Vikram Peddinti</h3>
+						<p>Tech/Baller</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="https://avatars2.githubusercontent.com/u/15005763?s=460&v=4" class="team-img">
+						<h3>Ben Cuan</h3>
+						<p>Tech Director</p>
+					</div>
+				
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<img src="https://avatars1.githubusercontent.com/u/15772933" class="team-img">
+						<h3>Omar Hossain</h3>
+						<p>Outreach Director</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="https://avatars1.githubusercontent.com/u/5799869" class="team-img">
+						<h3>EIRCH Qian</h3>
+						<p>Tech Director</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/20953933_254678441707022_5237618669754413221_n.jpg?_nc_cat=0&oh=2e5e9ec040a44cbaa3b84b89085aa275&oe=5B766ECE"
+						 class="team-img">
+						<h3>William Yang</h3>
+						<p>Tech Director</p>
+					</div>
+					<div class="col-sm-3">
+						<img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/22007974_298561607293844_3111784487286027296_n.jpg?_nc_cat=0&oh=fe97eb14d539595f03ef4c49012d5144&oe=5B797A2E"
+						 class="team-img"></img>
+						<h3>Sravya Gonaguntla</h3>
+						<p>Outreach/Finance</p>
 					</div>
 				</div>
-			</section>
 
-    	</div>
-    <footer>Made with <3 by Bananium Labs | 
-    Copyright © 2018 Launch Hacks I. All rights reserved.
-  
-    	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-		 crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-		 crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-		 crossorigin="anonymous"></script>
+			</div>
+	</section>
 
-    	<script src="js/index.js"></script>
-    </footer>
+</body>
+<footer>
+	<p>Made with
+		<3 by<a href="https://www.bananiumlabs.com">Bananium Labs</a>
+	</p>
+	<p>Copyright © 2018 Launch Hacks I. All rights reserved.</p>
 
-	</body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+	 crossorigin="anonymous"></script>
+
+	<script src="js/index.js"></script>
+</footer>
+
 </html>

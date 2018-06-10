@@ -1,8 +1,8 @@
 /*
-##############################################
-# Created by Ben Cuan, Eric Qian, Akash Basu #
-#              LaunchHacks Site              #
-##############################################
+###############################################################
+# Created by Ben Cuan, Eric Qian, Akash Basu, Vikram Peddinti #
+#                      LaunchHacks Site                       #
+###############################################################
 */
 
 /* *****************
@@ -12,6 +12,10 @@
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace'
 }
 
+.center-align {
+    align-content: center;
+}
+
 /* **********
  * * BANNER *
  * ********** */
@@ -19,7 +23,7 @@
  #banner-container {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
     z-index: -10 !important;
     top: 0;
     left: 0;
@@ -68,7 +72,7 @@
 ::selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 1rem;
+	text-shadow: #300101 0 0 0.5rem;
 	color: #940000;
 	-webkit-text-fill-color: #dd0202;
 }
@@ -76,7 +80,7 @@
 ::-moz-selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #300101 0 0 1rem;
+	text-shadow: #300101 0 0 0.5rem;
 	color: #940000;
 }
 
@@ -101,4 +105,32 @@
     width: 100%;
     max-width: 10vw;
     max-height: 10vw;
+}
+
+header.head {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+header.head .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+header.head .device-container{
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+h2 {
+    font-family: Catamaran,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    font-size: 70px !important;
+    letter-spacing: 1px;
 }
