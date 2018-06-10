@@ -11,11 +11,6 @@ $(document).ready(function () {
         }
     });
 
-    setTimeout(function() {
-        $('#bannerLogo').html(`<img src="../img/banner2.svg">`);
-    }, 2500)
-
-
     // Animate navbar when scrolled
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -48,7 +43,7 @@ $(document).ready(function () {
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
                     $('html, body').animate({
-                        scrollTop: (target.offset().top - $('#navbarSupportedContent').outerHeight() - 30)
+                        scrollTop: (target.offset().top - $('nav').outerHeight())
                     }, 1000, function () {
                         // Callback after animation
                         // Must change focus!

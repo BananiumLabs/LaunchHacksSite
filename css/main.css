@@ -20,6 +20,9 @@
  * * BANNER *
  * ********** */
 
+ svg {
+     height: 140%;
+ }
  #banner {
     width: 100%;
     min-height: 100vh;
@@ -33,32 +36,34 @@
     transform: scale(1.5);
 }
 
-#bannerIcon {
-    text-align: center;
-
+#bannerInfo {
+        text-align: center;
+        font-size: 10vh;
+        min-height: 20vh;
+}
+#bannerButton {
+    opacity: 0;
+    animation: 1s ease-in-out 2s 1 banner-icon forwards;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     
 }
 
-#bannerIcon a {
+#bannerButton a {
     color: #0091FA !important;
     width: auto;
 }
 
-#banner-logo {
-        
-    display: flex;
-    flex-direction: column;
-    right: 5vw;
-    justify-content: center;
-    cursor: default;
-    height: 100vh;
-    width: 90vw;
-    text-align: center;
-    background-color: black;
 
-        z-index: 0;
+
+#bannerLogo {
+        
+    display:block;
+    cursor: default;
+    height: 55vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 0;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -82,41 +87,14 @@
     to   { opacity: 1; }
 } 
 
-/* Shake Image */
-@keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -2px) rotate(-1deg);
-    }
+@keyframes banner-icon {
+    to {opacity: 1}
+}
+@-webkit-keyframes banner-icon {
+    to {opacity: 1}
+}
+@-moz-keyframes banner-icon {
+    to {opacity: 1}
 }
 
 /* *************
