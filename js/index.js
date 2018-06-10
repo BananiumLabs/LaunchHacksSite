@@ -4,6 +4,13 @@ $(document).ready(function () {
 
     // Animate logo movements
     $('#bannerLogo').fadeIn(3500);
+    const logo = new Vivus('bannerLogo', {
+        file: '../img/logo-animated.svg',
+        onReady: function(myVivus) {
+            myVivus.el.setAttribute('height', '100vh');
+            myVivus.play();
+        }
+    });
 
     // --- Reserved ---
 

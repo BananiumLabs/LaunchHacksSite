@@ -19,6 +19,7 @@
   "homepage": "https://github.com/BananiumLabs/LaunchHacksSite#readme",
   "dependencies": {
     "jquery": "^3.3.1",
+    "vivus": "^0.4.3",
     "webpack": "^4.11.0",
     "webpack-cli": "^3.0.2",
     "webpack-dev-server": "^3.1.4"
