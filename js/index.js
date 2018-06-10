@@ -1,5 +1,12 @@
 // Adopted from https://bananiumlabs.com
 $(document).ready(function () {
+    // Custom jQuery by Eric Q. 
+
+    // Animate logo movements
+    $('#bannerLogo').fadeIn(3500);
+
+    // --- Reserved ---
+
     console.log('init');
     // Select all links with hashes
     $('a[href*="#"]')
@@ -40,5 +47,6 @@ $(document).ready(function () {
     // $('#downloadSP').click(function() {
     //     console.log('Sponsor Packet Download Initialized!')
     // });
+
 
 });
