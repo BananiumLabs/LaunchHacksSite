@@ -3,16 +3,20 @@ $(document).ready(function () {
     // Custom jQuery by Eric Q. 
 
     // Animate logo movements
-    $('#bannerLogo').fadeIn(3500);
     const logo = new Vivus('bannerLogo', {
-        file: '../img/logo-animated.svg',
+        file: '../img/banner-animated.svg',
+        reverseStack: true,
         onReady: function(myVivus) {
-            myVivus.el.setAttribute('height', '60vh');
             myVivus.play();
         }
     });
     $('#bannerLogo').css('animation', 'shake 0.5s');
     $('#bannerLogo').css('animation-iteration-count', 'infinite');
+
+    setTimeout(function() {
+        $('#bannerLogo').html(`<img src="../img/banner2.svg">`);
+    }, 4500)
+
 
     // Animate navbar when scrolled
     $(window).scroll(function () {
