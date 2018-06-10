@@ -7,13 +7,13 @@ $(document).ready(function () {
         file: '../img/banner-animated.svg',
         reverseStack: true,
         onReady: function(myVivus) {
-            myVivus.play();
+            myVivus.play(2);
         }
     });
 
     setTimeout(function() {
         $('#bannerLogo').html(`<img src="../img/banner2.svg">`);
-    }, 4500)
+    }, 2500)
 
 
     // Animate navbar when scrolled
