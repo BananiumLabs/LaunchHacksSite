@@ -32,7 +32,6 @@ section {
     padding-bottom: 5vh;
 }
 
-
 /* **********
  * * BANNER *
  * ********** */
@@ -132,13 +131,15 @@ section {
 ::selection {
     background: transparent;
     font-style: oblique;
-	text-shadow: #011144 1px 1px 0.25rem;
+    text-shadow: #bfceff 1px 1px 0;
+    color: rgb(1, 124, 212);
 }
  
 ::-moz-selection {
-    background: transparent;
+   background: transparent;
     font-style: oblique;
-	text-shadow: #011144 1px 1px 0.25rem;
+    text-shadow: #bfceff 1px 1px 0;
+    color: rgb(1, 124, 212);
 }
 
 /* ************
@@ -185,3 +186,16 @@ header.head .device-container{
     margin-left: auto;
     
 }
+
+/* *******
+ * * NAV *
+ * ******* */
+ nav {
+    /* Box-shadow adopted from Materialize */
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+ }
+ nav img {
+     max-height: 5vh;
+     margin-right: 1.5vw;
+ }
