@@ -144,6 +144,14 @@ section {
     transition-duration: 0.4s;
 }
 
+.banner-text-primary {
+    color: #0091FA;
+}
+
+.banner-text-secondary {
+    color: #0066B1;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
