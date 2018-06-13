@@ -45,6 +45,11 @@ section {
     padding-bottom: 5vh;
 }
 
+.right-align {
+    float: right;
+    text-align: right;
+}
+
 /* **********
  * * BANNER *
  * ********** */
@@ -169,6 +174,25 @@ section {
     font-style: oblique;
     text-shadow: #bfceff 1px 1px 0;
     color: rgb(1, 124, 212);
+}
+
+/* *******
+ * * FAQ *
+ * ******* */
+.card-header {
+    background-color: white;
+    border-bottom: none;
+    font-size: 2.5vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.card {
+    border: 0.5vh;
+}
+
+.card-header:hover {
+    font-size: 2.7vh;
 }
 
 /* ************
