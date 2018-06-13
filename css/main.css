@@ -63,6 +63,10 @@ section {
     text-align: right;
 }
 
+#schedule {
+    overflow-x: scroll;
+}
+
 /* **********
  * * BANNER *
  * ********** */
@@ -238,6 +242,7 @@ section {
     width: 100%;
     max-width: 10vw;
     max-height: 10vw;
+    align-self: center;
 }
 
 header.head {
