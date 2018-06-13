@@ -21,8 +21,13 @@
 /* *****************
  * * GLOBAL STYLES *
  * ***************** */
+ 
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
+    overflow-y: visible;
+}
+
+body {
     overflow-x: hidden;
 }
 
