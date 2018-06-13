@@ -240,6 +240,21 @@ header.head .device-container{
     
 }
 
+.team-icon {
+    font-size: 1rem;
+    color: rgb(37, 37, 37);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.team-icon:hover {
+    transform: scale(1.1);
+}
+
+.team-wrapper p, .team-wrapper h3 {  
+    margin-bottom: 0.3rem;
+}
+
 /* *******
  * * NAV *
  * ******* */
