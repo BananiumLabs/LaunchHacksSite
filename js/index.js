@@ -20,6 +20,12 @@ $(document).ready(function () {
         }
     });
 
+    // User Tracking
+    $('#downloadSP').click(function() {
+        console.log('Sponsor Packet Download Initialized!')
+        
+    });
+
     // --- Reserved END Custom jQuery---
 
     console.log('init');
@@ -59,9 +65,7 @@ $(document).ready(function () {
             }
         });
 
-    $('#downloadSP').click(function() {
-        console.log('Sponsor Packet Download Initialized!')
-    });
+    
 
 
 });
