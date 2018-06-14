@@ -29,6 +29,8 @@
 
 section {
     overflow-x: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 footer {
@@ -53,11 +55,6 @@ h2 {
     background: rgb(223, 240, 253);
 }
 
-section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
 .right-align {
     float: right;
     text-align: right;
@@ -65,6 +62,12 @@ section {
 
 #schedule {
     overflow-x: scroll;
+}
+
+@media only screen and (min-width: 600px) {
+    #representatives {
+        padding-bottom: 8vh;
+    }
 }
 
 /* **********
