@@ -137,11 +137,11 @@ section {
     width: auto;
 }
 
-#bannerButton:hover, #apply button:hover {
+#bannerButton:hover, #apply a:hover {
     transform: scale(1.25);
 }
 
-#apply button {
+#apply a {
     margin-left: 1vw;
     margin-right: 1vw;
     -webkit-transition-duration: 0.4s; /* Safari */
