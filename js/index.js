@@ -1,18 +1,30 @@
 // Adopted from https://bananiumlabs.com
+// Created for https://launchhacks.tech
+if (typeof ($) === undefined || typeof ($) === null) {
+    alert("Core site resources failed to load. Please make sure your browser" + 
+    " is JavaScript compatible!");
+}
 $(document).ready(function () {
     // Custom jQuery by Eric Q. 
+
+    // Load page resources
+    if (document.getElementById("nav") !== null && document.getElementById("nav") !== undefined) {
+        $('#nav').load("./resources/nav.html");
+    }
 
     // Animate logo movements
     const logo = new Vivus('bannerLogo', {
         file: '../img/banner-animated.svg',
         reverseStack: true,
-        onReady: function(myVivus) {
-            myVivus.play(2);
+        onReady: function(bannerLogoVivus) {
+            bannerLogoVivus.play(2);
         }
     });
 
     // Animate navbar when scrolled
     $(window).scroll(function () {
+        // Change int to configure how many pixels must be scrolled before navbar
+        // appears
         if ($(this).scrollTop() > 100) {
             $('.navbar').fadeIn();
         } else {
@@ -22,7 +34,8 @@ $(document).ready(function () {
 
     // User Tracking
     $('#downloadSP').click(function() {
-        console.log('Sponsor Packet Download Initialized!')
+        // Internal metrics recording
+        console.log('Sponsor Packet Download Initialized!');
         
     });
 
@@ -37,9 +50,8 @@ $(document).ready(function () {
         .click(function (event) {
             // On-page links
             if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                &&
-                location.hostname === this.hostname
+                location.pathname.replace(/^\//, '') == 
+                this.pathname.replace(/^\//, '') && location.hostname === this.hostname
             ) {
                 // Figure out element to scroll to
                 var target = $(this.hash);
@@ -64,8 +76,4 @@ $(document).ready(function () {
                 }
             }
         });
-
-    
-
-
 });
