@@ -44,13 +44,6 @@ footer {
     align-content: center;
 }
 
-h2 {
-    font-family: Catamaran,Helvetica,Arial,sans-serif;
-    font-weight: 200;
-    font-size: 70px !important;
-    letter-spacing: 1px;
-}
-
 .secondary {
     background: rgb(223, 240, 253);
 }
@@ -70,6 +63,49 @@ h2 {
     }
 }
 
+/* ********************
+ * * FONTS AND SIZING *
+ * ******************** */
+
+ h2 {
+    font-family: Catamaran,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-weight: 150;
+}
+
+/* Tablets and Phones */
+@media only screen and (orientation: portrait) and (max-width: 800px) {
+    h2 {
+        font-size: 40px !important;
+    }
+
+    #bannerInfo h3 {
+        font-size: 6vh;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+}
+
+/* Computers */
+ @media only screen and (orientation: landscape) and (min-width: 800px) {
+     h2 {
+        font-size: 70px !important;
+     }
+    #bannerInfo h3 {
+        font-size: 8vh;
+    }
+
+    h4 {
+        font-size: 60px !important;
+    }
+ }
+
 /* **********
  * * BANNER *
  * ********** */
@@ -87,6 +123,7 @@ h2 {
     position: relative;
     top: 0;
     left: 0;
+    padding-top: 0;
 
     /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
     background:
@@ -122,10 +159,6 @@ h2 {
     z-index: 0;
     opacity: 0;
     animation: 1s ease-in-out 2s 1 banner-icon forwards;
-}
-
-#bannerInfo h3 {
-    font-size: 8vh;
 }
 
 #bannerButton {
@@ -296,4 +329,9 @@ header.head .device-container{
  nav img {
      max-height: 5vh;
      margin-right: 1.5vw;
+ }
+
+ .navbar-toggler {
+     border-color: transparent !important;
+     color: black !important;
  }
