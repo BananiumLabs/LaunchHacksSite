@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // Load page resources
     if (document.getElementById("nav") !== null && document.getElementById("nav") !== undefined) {
-        $('#nav').load("./resources/nav.html");
+        $('#nav').load("resources/nav.html");
     }
 
     // Animate logo movements
