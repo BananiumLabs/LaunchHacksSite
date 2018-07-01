@@ -17,6 +17,14 @@ $(document).ready(function () {
         $('#member').load("resources/member.html");
     }
 
+    if (document.getElementById("team") !== null && document.getElementById("team") !== undefined) {
+        $('#team').load("resources/team.html");
+    }
+
+    if (document.getElementById("representative") !== null && document.getElementById("representative") !== undefined) {
+        $('#representativeWrapper').load("resources/representative.html");
+    }
+
     // Animate logo movements
     const logo = new Vivus('bannerLogo', {
         file: '../img/banner-animated.svg',
