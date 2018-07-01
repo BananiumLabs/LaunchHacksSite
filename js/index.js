@@ -10,6 +10,11 @@ $(document).ready(function () {
     // Load page resources
     if (document.getElementById("nav") !== null && document.getElementById("nav") !== undefined) {
         $('#nav').load("resources/nav.html");
+        
+    }
+
+    if (document.getElementById("member") !== null && document.getElementById("member") !== undefined) {
+        $('#member').load("resources/member.html");
     }
 
     // Animate logo movements
