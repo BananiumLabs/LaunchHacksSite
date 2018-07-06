@@ -332,6 +332,11 @@ header.head .device-container{
     margin-bottom: 0.3rem;
 }
 
+#member {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
 /* *******
  * * NAV *
  * ******* */

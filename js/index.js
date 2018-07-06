@@ -20,7 +20,7 @@ $(document).ready(function () {
         $('#team').load("resources/team.html");
     }
 
-    if (document.getElementById("representative") !== null && document.getElementById("representative") !== undefined) {
+    if (document.getElementById("representativeWrapper") !== null && document.getElementById("representativeWrapper") !== undefined) {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
