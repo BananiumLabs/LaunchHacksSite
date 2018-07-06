@@ -1,20 +1,428 @@
-<!-- TEMPORARY!!! Delete soon -->
+<!DOCTYPE HTML>
+<html>
+
 <head>
     <title>Launch Hacks I</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo-no-shadow.png">
 </head>
 
-<div class="under-construction">
-    <img src="./img/banner-animated.svg">
-    <h1>Under Construction</h1>
-    <p>Our site will be up shortly!</p>
-</div>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;">
+
+        <a class="navbar-brand" href="#banner">
+            <img src="./img/logo.svg">LaunchHacks I</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="nav justify-content-center ml-auto ">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="#">
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#judges">Judges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#representatives">Representatives</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled">Live (COMING SOON!)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- <div id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;"></div> -->
+
+    <section id="banner">
+
+        <div id="bannerLogo"></div>
+        <div id="bannerInfo">
+
+            <h3 class="text-center">
+                <date class="banner-text-primary">October 27-28, </date>
+                <date class="banner-text-secondary">2018</date>
+                <br>
+                <loc class="banner-text-primary">Location: </loc>
+                <loc class="banner-text-secondary">TBA</loc>
+                </br>
+            </h3>
+
+            <div id="apply">
+                <div class="text-center">
+                    <a class="btn btn-primary btn-lg text-center" href="https://launchhacks.tech/signup" target="_blank">
+                        Hacker Sign Up
+                    </a>
+                    <a class="btn btn-primary btn-lg text-center" href="https://launchhacks.tech/mentor" target="_blank">
+                        Mentor Sign Up
+                    </a>
+                </div>
+            </div>
+
+            <div id="bannerButton">
+                <a href="#about">
+                    <i class="fas fa-angle-double-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2 class="text-center">About</h2>
+                    <p class="text-center">Launch Hacks is a 24 hour hackathon where we bring high school students in the Bay Area
+                        together to convert ideas into reality. Food, workshops, prizes, and swag will be provided to all participants for free!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="faq" class="container">
+        <div class="">
+            <div>
+                <h2 class="text-center">FAQ</h2>
+                <div class="faq-wrapper row list-group list-group-flush">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqOne">
+                                Who can attend?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqOne" class="card-body collapse" data-parent="#faq-wrapper">
+                                LaunchHacks is open to all high school students (9th to 12th grade). However, if you have already graduated from high school,
+                                you can still attend as a mentor! No experience is necessary, and we would love to see new
+                                participants!
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqTwo">
+                                Do I have to pay for anything?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqTwo" class="card-body collapse" data-parent="#faq-wrapper">
+                                Attending LaunchHacks is and will always be free! Leave your money at home, as we won't be selling you anything :)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqNine">
+                                What can I get from coming?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqNine" class="card-body collapse" data-parent="#faq-wrapper">
+                                In addition to a fun and unique experience to improve your maker skills with your friends, we will have amazing prizes for
+                                our best submissions! And even if you don't end up winning, everyone will get free food and
+                                swag, including T-shirts, laptop stickers, and various goodies from our sponsors!
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqTen">
+                                What should I bring?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqTen" class="card-body collapse" data-parent="#faq-wrapper">
+                                All you need to bring is a laptop to work on, a student ID from your school, a sleeping bag or blanket, toiletries, and any
+                                accessories you might want (headphones, chargers, cool hardware to work with, etc). We'll
+                                provide the food, swag, prizes, and mentors for free!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqThree">
+                                What can I make?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqThree" class="card-body collapse" data-parent="#faq-wrapper">
+                                Anything you want! Software projects are often the most popular type of submission, but we also welcome and encourage other
+                                types of unique submissions, like hardware (Arduinos, Raspberry Pi, etc), invention prototypes,
+                                artwork, or anything else you can think of. Even if you can't or don't want to code, there
+                                are still plenty of things you can make to wow the judges!
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqFour">
+                                How many people can be in a team?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqFour" class="card-body collapse" data-parent="#faq-wrapper">Teams can be a maximum of
+                                <b>4</b> people. Solo teams are allowed, but we strongly encourage you to meet new people if
+                                you come by yourself! On the other hand, if you are a team of 2 or 3, one of the best things
+                                you can do is invite someone new to join your team - they will bring in new ideas and areas
+                                of expertise. At the beginning of the event, we will do our best to help everyone find a
+                                team.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqFive">
+                                Am I required to stay overnight?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqFive" class="card-body collapse" data-parent="#faq-wrapper">If you need to leave early for any reason, please let us know through
+                                <a href="mailto:help@bananiumlabs.com">email</a> before the day of the event. For safety reasons we will not allow anyone to leave
+                                after
+                                <b>8 PM</b>. Doors will open at
+                                <b>9 AM</b> in time for judging. </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqSix">
+                                Do I have to know how to code?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqSix" class="card-body collapse" data-parent="#faq-wrapper">
+                                Definitely not! If you don't feel like coding, there are still so many things you can make - see 'What can I make?' for a
+                                couple ideas. If you do want to code something but don't know how yet, don't worry! We will
+                                hold workshops and provide expert mentors to help you get started.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqSeven">
+                                How will our project be judged?
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqSeven" class="card-body collapse" data-parent="#faq-wrapper">All projects will be judged with the same criteria: originality, polish, difficulty of implementation,
+                                and viability as a product. We highly suggest that you treat your project like a
+                                <i>product that you could potentially sell</i>- rather than pitching just for the judges, pitch
+                                for everyone else, too!</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 card">
+                            <h3 class="card-header" data-toggle="collapse" href="#faqEight">
+                                I have more questions, help me!
+                                <i class="fas fa-angle-down right-align"></i>
+                            </h3>
+                            <p id="faqEight" class="card-body collapse" data-parent="#faq-wrapper">Please feel free to join the official LaunchHacks Discord channel at:
+                                <a href="https://launchhacks.tech/discord">launchhacks.tech/discord</a> or feel free to email us at
+                                <a href="mailto:contact@launchhacks.tech">contact@launchhacks.tech!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" class="secondary">
+        <div class="container center-align">
+            <h2 class="text-center">Our Partners</h2>
+            <div class="row small-columns">
+                <a href="https://hackplus.io" class="col-6 text-center">
+                    <img src="img/sponsors/hackplus.png" title="Hack+" class="sponsor-img">
+                </a>
+                <a href="https://bananiumlabs.com" class="col-6 text-center">
+                    <img src="img/sponsors/bananium.png" title="Bananium Labs" class="sponsor-img">
+                </a>
+            </div>
+            <br>
+            <h2 class="text-center">Our Sponsors</h2>
+            <div class="row small-columns">
+                <a href="#" class="col-4 text-center">
+                    <img src="img/sponsors/puppy1.jpg" title="TBA" class="sponsor-img">
+                </a>
+                <a href="#" class="col-4 text-center">
+                    <img src="img/sponsors/puppy2.jpg" title="TBA" class="sponsor-img">
+                </a>
+                <a href="#" class="col-4 text-center">
+                    <img src="img/sponsors/puppy3.jpg" title="TBA" class="sponsor-img">
+                </a>
+            </div>
+
+            <p class="text-center">Interested in sponsoring to make an impact in the future generation of entrepreneurs and engineers? Contact us
+                at
+                <a href="mailto:sponsor@launchhacks.tech">sponsor@launchhacks.tech!</a>
+                <br>
+                <br>
+                <a id="downloadSP" class="btn btn-primary center" role="button" href="/files/prospectus.pdf" target="_blank">View Sponsorship Prospectus</a>
+            </p>
+
+
+            <!-- Change the email domain ^^^ -->
+
+        </div>
+    </section>
+
+
+    <section id="schedule" class="container">
+        <div class="col-sm center-align">
+            <h2 class="text-center">Schedule</h2>
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Event</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Host</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">8:00AM</th>
+                        <td>Organizer Arrival</td>
+                        <td>Main Entrance</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:00AM</th>
+                        <td>Door Opens</td>
+                        <td>Main Entrance</td>
+                        <td>LaunchHacks Team</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00AM</th>
+                        <td>Opening Ceremony</td>
+                        <td>Presentation Area</td>
+                        <td>LaunchHacks Team</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:45AM</th>
+                        <td>Start Hacking!</td>
+                        <td>Computer Area</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:45AM</th>
+                        <td>Team Mixer</td>
+                        <td>Presentation Area</td>
+                        <td>LaunchHacks Team</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00AM - 12:00PM</th>
+                        <td>Workshop - Intro to Hackathons</td>
+                        <td>Presentation Area</td>
+                        <td>LaunchHacks Team</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:45PM - 1:30PM</th>
+                        <td>Lunch Time!</td>
+                        <td>Food Room</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1:45PM</th>
+                        <td>Workshops Begin! (Details TBA)</td>
+                        <td>Presentation Area</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7:15PM</th>
+                        <td>Dinner Time</td>
+                        <td>Food Room</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:00AM</th>
+                        <td>Midnight Snack!</td>
+                        <td>Food Room</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7:30AM</th>
+                        <td>Breakfast!</td>
+                        <td>Food Room</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8:45AM</th>
+                        <td>Hacking ends!</td>
+                        <td>Everywhere</td>
+                        <td>Everyone</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:00AM</th>
+                        <td>Judging!</td>
+                        <td>Computer Area</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:30AM</th>
+                        <td>Closing Ceremony</td>
+                        <td>Presentation Area</td>
+                        <td>Everyone</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="judges" class="secondary">
+        <div class="container">
+            <div class="col-sm">
+                <h2 class="text-center">Our Judges</h2>
+            </div>
+
+            <div id="judge-wrapper">
+                <br>
+                <br>
+            </div>
+    </section>
+
+    <section class="container">
+        <div class="col-sm">
+            <h2 class="text-center">Our Team</h2>
+        </div>
+        <div id="team"></div>
+    </section>
+    <section class="secondary" id="representatives">
+        <div id="representativeWrapper">
+        </div>
+    </section>
+</body>
+<footer class="page-footer orange darken-1">
+    <div class="footer-copyright orange darken-3">
+        <div class="container">
+            <h6 class="text-light float-left">© 2017-2018 Bananium Labs + LaunchHacks</h6>
+            <a class="text-light text-lighten-4 float-right-not-mobile" href="https://github.com/BananiumLabs/BananiumSite/blob/master/LICENSE">MIT License</a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/vivus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</footer>
+
+</html>
