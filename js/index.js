@@ -9,8 +9,7 @@ $(document).ready(function () {
 
     // Load page resources
     if (document.getElementById("nav") !== null && document.getElementById("nav") !== undefined) {
-        $('#nav').load("resources/nav.html");
-        
+        $('#nav').load("resources/nav.html");   
     }
 
     if (document.getElementById("member") !== null && document.getElementById("member") !== undefined) {
@@ -51,7 +50,6 @@ $(document).ready(function () {
         console.log('Sponsor Packet Download Initialized!');
         
     });
-
     // --- Reserved END Custom jQuery---
 
     console.log('init');
