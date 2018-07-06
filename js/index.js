@@ -8,22 +8,11 @@ $(document).ready(function () {
     // Custom jQuery by Eric Q. 
 
     // Load page resources
-    if (document.getElementById("nav") !== null && document.getElementById("nav") !== undefined) {
-        $('#nav').load("resources/nav.html");
-        
-    }
-
-    if (document.getElementById("member") !== null && document.getElementById("member") !== undefined) {
-        $('#member').load("resources/member.html");
-    }
-
-    if (document.getElementById("team") !== null && document.getElementById("team") !== undefined) {
-        $('#team').load("resources/team.html");
-    }
-
-    if (document.getElementById("representative") !== null && document.getElementById("representative") !== undefined) {
-        $('#representativeWrapper').load("resources/representative.html");
-    }
+    $('#nav').load("resources/nav.html");
+    $('#judge-wrapper').load("resources/member.html");
+    $('#team').load("resources/team.html");
+    $('#representativeWrapper').load("resources/representative.html");
+    
 
     // Animate logo movements
     const logo = new Vivus('bannerLogo', {

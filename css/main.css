@@ -278,9 +278,9 @@ h4 {
     margin: 2vh;
     height: auto;
     width: auto;
+    max-width: 40vw;
+    max-height: 10vh;
     align-self: center;
-    max-width: 15vw;
-    max-height: 15vw;
 }
 
 /* ********
