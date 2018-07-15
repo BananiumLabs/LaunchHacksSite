@@ -24,9 +24,20 @@ $(document).ready(function () {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
+    // Detect browser to load the correct svg
+    var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)
+    if (typeof InstallTrigger !== 'undefined')  { //Firefox 
+        console.log('Using Firefox');
+        bannerFile = '../img/banner-animated-firefox.svg';
+    }
+    else if (!!window.StyleMedia)  {// Edge
+        console.log('Using Edge');
+        bannerFile = '../img/banner-animated-edge.svg';
+    }
+
     // Animate logo movements
     const logo = new Vivus('bannerLogo', {
-        file: '../img/banner-animated.svg',
+        file: bannerFile,
         reverseStack: true,
         onReady: function(bannerLogoVivus) {
             bannerLogoVivus.play(2);
