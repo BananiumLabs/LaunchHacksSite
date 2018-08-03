@@ -354,3 +354,23 @@ header.head .device-container{
      border-color: transparent !important;
      color: black !important;
  }
+
+ .btn-gudbutton {
+    background: #0055ff;
+    border: 2px solid #0055ff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+ }
+ .btn-gudbutton:hover {
+    background: #ffffff;
+    border:#0055ff;
+    color: rgb(0, 34, 255);
+  
+  }
