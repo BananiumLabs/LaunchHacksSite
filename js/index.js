@@ -20,6 +20,18 @@ $(document).ready(function () {
         $('#team').load("resources/team.html");
     }
 
+    if (document.getElementById("sponsor") !== null && document.getElementById("sponsor") !== undefined) {
+        $('#sponsor').load("resources/sponsor.html");
+    }
+
+    if (document.getElementById("faq") !== null && document.getElementById("faq") !== undefined) {
+        $('#faq').load("resources/faq.html");
+    }
+
+    if (document.getElementById("schedule") !== null && document.getElementById("schedule") !== undefined) {
+        $('#schedule').load("resources/schedule.html");
+    }
+
     if (document.getElementById("representativeWrapper") !== null && document.getElementById("representativeWrapper") !== undefined) {
         $('#representativeWrapper').load("resources/representative.html");
     }
