@@ -303,6 +303,11 @@ h4 {
     max-width: 40vw;
     max-height: 10vh;
     align-self: center;
+    transition-duration: 1s;
+}
+
+.sponsor-img:hover {
+    transform: scale(1.2);
 }
 
 /* ********
