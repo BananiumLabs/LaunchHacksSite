@@ -175,6 +175,28 @@ h4 {
     animation: 1s ease-in-out 2s 1 banner-icon forwards;
 }
 
+#link-buttons {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#link-buttons .link-btn {
+   font-size: 5vw;
+    color: rgb(37, 37, 37);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.link-btn:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (orientation: portrait) and (max-width: 800px) {
+    .mobile-width-fix {
+        max-width: 15vw;
+    }
+}
+
 #bannerButton {
     opacity: 0;
     animation: 1s ease-in-out 2s 1 banner-icon forwards;
