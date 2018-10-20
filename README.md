@@ -9,5 +9,5 @@ https://launchhacks.tech (LIVE SITE COMING SOON!)
 ## Coded by
  - [Ben Cuan (dbqeo)](https://github.com/dbqeo)
  - [Eric Qian (EnumC)](https://github.com/EnumC)
- - [Akash Basu (FugaX)](https://github.com/FugaX)
+ - [Akash Basu (Fujax)](https://github.com/Fujax)
  - [Vikram Peddinti (DarkFlameX1)](https://github.com/DarkFlameX1)
