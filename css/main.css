@@ -125,9 +125,7 @@ h4 {
  * ********** */
 
  #banner svg {
-     height: 120%;
-     display: block;
-     margin: auto;
+    height: 120%;
  }
 
  #banner {
@@ -158,8 +156,8 @@ h4 {
 }
 
 
-#bannerLogo {
-    display:block;
+#bannerLogo, #bannerLogo2 {
+    display: block;
     cursor: default;
     height: 55vh;
     width: 100vw;

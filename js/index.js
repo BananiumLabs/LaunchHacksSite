@@ -47,22 +47,34 @@ $(document).ready(function () {
         bannerFile = '../img/banner-animated-edge.svg';
     }
     //Safari
-    else if (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+    var isSafari = (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification)));
+    if(isSafari)
         console.log('Using Safari');
-        bannerFile = '../img/banner-animated-safari.svg';
-    }
-    else 
-    console.log('using default banner');
 
 
     // Animate logo movements
+
     const logo = new Vivus('bannerLogo', {
         file: bannerFile,
         reverseStack: true,
-        onReady: function(bannerLogoVivus) {
+        onReady: function (bannerLogoVivus) {
             bannerLogoVivus.play(2);
+            if(isSafari)
+                $('#bannerLogo').css('maxHeight', '0');
         }
     });
+
+    if(isSafari)
+    setTimeout(function() {
+        const logo2 = new Vivus('bannerLogo2', {
+            file: bannerFile,
+            reverseStack: true,
+            onReady: function (bannerLogoVivus2) {
+                bannerLogoVivus2.play(2);
+            }
+        });
+    }, 1000);
+    
 
     // Animate navbar when scrolled
     $(window).scroll(function () {
