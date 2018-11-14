@@ -46,6 +46,14 @@ $(document).ready(function () {
         console.log('Using Edge');
         bannerFile = '../img/banner-animated-edge.svg';
     }
+    //Safari
+    else if (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+        console.log('Using Safari');
+        bannerFile = '../img/banner-animated-safari.svg';
+    }
+    else 
+    console.log('using default banner');
+
 
     // Animate logo movements
     const logo = new Vivus('bannerLogo', {

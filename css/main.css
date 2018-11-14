@@ -126,6 +126,8 @@ h4 {
 
  #banner svg {
      height: 120%;
+     display: block;
+     margin: auto;
  }
 
  #banner {
