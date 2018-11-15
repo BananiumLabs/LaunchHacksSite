@@ -61,6 +61,8 @@ $(document).ready(function () {
             bannerLogoVivus.play(2);
             if(isSafari)
                 $('#bannerLogo').css('maxHeight', '0');
+            else
+                $('#bannerLogo2').hide();
         }
     });
 
