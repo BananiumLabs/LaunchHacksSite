@@ -300,10 +300,14 @@ h4 {
     margin: 2vh;
     height: auto;
     width: auto;
-    max-width: 40vw;
+    max-width: 30vw;
     max-height: 10vh;
     align-self: center;
     transition-duration: 1s;
+}
+
+.larger-sponsor-img {
+    transform: scale(1.8)
 }
 
 .sponsor-img:hover {
