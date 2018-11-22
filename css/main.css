@@ -309,6 +309,9 @@ h4 {
 .larger-sponsor-img {
     transform: scale(1.8)
 }
+.restrict-sponsor-img {
+   max-width: 20vw;
+}
 
 .sponsor-img:hover {
     transform: scale(1.2);
