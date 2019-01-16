@@ -32,6 +32,10 @@ $(document).ready(function () {
         $('#schedule').load("resources/schedule.html");
     }
 
+    if (document.getElementById("prizes") !== null && document.getElementById("prizes") !== undefined) {
+        $('#prizes').load("resources/prizes.html");
+    }
+
     if (document.getElementById("representativeWrapper") !== null && document.getElementById("representativeWrapper") !== undefined) {
         $('#representativeWrapper').load("resources/representative.html");
     }

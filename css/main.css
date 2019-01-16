@@ -54,7 +54,7 @@ footer {
     text-align: right;
 }
 
-#schedule {
+#schedule, #prizes {
     overflow-x: scroll;
 }
 
@@ -306,9 +306,6 @@ h4 {
     transition-duration: 1s;
 }
 
-.larger-sponsor-img {
-    transform: scale(1.8)
-}
 .restrict-sponsor-img {
    max-width: 20vw;
 }
