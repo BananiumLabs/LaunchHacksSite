@@ -40,6 +40,17 @@ $(document).ready(function () {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
+    $("#livesite").attr("aria-disabled", true);
+    $("#livesite").append('<span id="disable"> (COMING SOON!)');
+    document.getElementById("livesite").addEventListener('click', function (event) {
+        if (this.classList.contains('disabled')) {
+            event.preventDefault();
+            
+            console.warn("Live site is not enabled yet! Preventing redirect.");
+            alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
+        }
+    });
+
     // Detect browser to load the correct svg
     var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)
     if (typeof InstallTrigger !== 'undefined')  { //Firefox 
