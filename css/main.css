@@ -25,6 +25,7 @@
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
     overflow-y: visible;
+    opacity: 1;
 }
 
 section {
