@@ -59,7 +59,7 @@ $(document).ready(function () {
             var animation_height = $(window).innerHeight() * 0.25;
             var ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
-            $('section').each(function () {
+            $('section, #apply').each(function () {
 
                 var objectTop = $(this).offset().top;
                 var windowBottom = $(window).scrollTop() + $(window).innerHeight();
@@ -85,7 +85,7 @@ $(document).ready(function () {
                 }
             });
         }
-        $('section').css('opacity', 0);
+        $('section, #apply').css('opacity', 0);
         fade();
         $(window).scroll(function () { fade(); });
     });
