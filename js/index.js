@@ -56,7 +56,7 @@ $(document).ready(function () {
     // Fade in effect  
     $(window).on("load", function () {
         function fade() {
-            var animation_height = $(window).innerHeight() * 0.25;
+            var animation_height = $(window).innerHeight() * 0.50;
             var ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
             $('section, #apply').each(function () {
