@@ -13,10 +13,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo-no-shadow.png">
-    <!-- <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        ScrollReveal({ reset: true, duration: 1500 });
-    </script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133381763-1"></script>
     <script>
@@ -30,115 +26,116 @@
 </head>
 
 <body>
+    <div id="topPage">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;">
+            <a class="navbar-brand" href="#banner">
+                <img src="./img/logo.svg">LaunchHacks I</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <a class="navbar-brand" href="#banner">
-            <img src="./img/logo.svg">LaunchHacks I</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="nav justify-content-center ml-auto ">
-                <li class="nav-item active ">
-                    <a class="nav-link" href="#">
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sponsor">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#schedule">Schedule</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#prizes">Prizes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#judges">Judges (COMING SOON!)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#team">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#representatives">Representatives</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link disabled" id="livesite" href="https://live.launchhacks.tech">Live</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-
-    <!-- <div id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;"></div> -->
-
-    <section id="banner">
-
-        <div id="bannerLogo"></div>
-        <div id="bannerLogo2"></div>
-        <div id="bannerInfo">
-
-            <h3 class="text-center">
-                <date class="banner-text-primary">April 20-21</date>
-                <date class="banner-text-secondary">2019</date>
-                <br>
-                <loc class="banner-text-primary">Location: </loc>
-                <loc class="banner-text-secondary">42 Silicon Valley, Fremont, CA</loc>
-                <br>
-                <div class="row" id="link-buttons">
-                    <div class="col-sm-3 mobile-width-fix">
-                        <a href="https://github.com/BananiumLabs/LaunchHacksSite" target="_blank">
-                            <i class="fab fa-github link-btn"></i>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="nav justify-content-center ml-auto ">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">
+                            <span class="sr-only">(current)</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sponsor">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prizes">Prizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#judges">Judges (COMING SOON!)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#representatives">Representatives</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" id="livesite" href="https://live.launchhacks.tech">Live</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <!-- <div id="nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="display:none;"></div> -->
+
+        <section id="banner">
+
+            <div id="bannerLogo"></div>
+            <div id="bannerLogo2"></div>
+            <div id="bannerInfo">
+
+                <h3 class="text-center">
+                    <date class="banner-text-primary">April 20-21</date>
+                    <date class="banner-text-secondary">2019</date>
+                    <br>
+                    <loc class="banner-text-primary">Location: </loc>
+                    <loc class="banner-text-secondary">42 Silicon Valley, Fremont, CA</loc>
+                    <br>
+                    <div class="row" id="link-buttons">
+                        <div class="col-sm-3 mobile-width-fix">
+                            <a href="https://github.com/BananiumLabs/LaunchHacksSite" target="_blank">
+                                <i class="fab fa-github link-btn"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mobile-width-fix">
+                            <a href="https://linkedin.com/company/launch-hacks" target="_blank">
+                                <i class="fab fa-linkedin link-btn"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mobile-width-fix">
+                            <a href="https://www.instagram.com/launch_hacks/" target="_blank">
+                                <i class="fab fa-instagram link-btn"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mobile-width-fix">
+                            <a href="https://www.facebook.com/Launch-Hacks-450467885439827/?modal=admin_todo_tour&ref=admin_to_do_step_controller" target="_blank">
+                                <i class="fab fa-facebook link-btn"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-sm-3 mobile-width-fix">
-                        <a href="https://linkedin.com/company/launch-hacks" target="_blank">
-                            <i class="fab fa-linkedin link-btn"></i>
+                </h3>
+
+                <div id="apply">
+                    <div class="text-center">
+                        <a class="btn btn-gudbutton" href="https://launchhacks.tech/signup" target="_blank">
+                            Hacker Sign Up
                         </a>
-                    </div>
-                    <div class="col-sm-3 mobile-width-fix">
-                        <a href="https://www.instagram.com/launch_hacks/" target="_blank">
-                            <i class="fab fa-instagram link-btn"></i>
-                        </a>
-                    </div>
-                    <div class="col-sm-3 mobile-width-fix">
-                        <a href="https://www.facebook.com/Launch-Hacks-450467885439827/?modal=admin_todo_tour&ref=admin_to_do_step_controller" target="_blank">
-                            <i class="fab fa-facebook link-btn"></i>
+                        <a class="btn btn-gudbutton" href="https://launchhacks.tech/mentor" target="_blank">
+                            Mentor Sign Up
                         </a>
                     </div>
                 </div>
-            </h3>
 
-            <div id="apply">
-                <div class="text-center">
-                    <a class="btn btn-gudbutton" href="https://launchhacks.tech/signup" target="_blank">
-                        Hacker Sign Up
-                    </a>
-                    <a class="btn btn-gudbutton" href="https://launchhacks.tech/mentor" target="_blank">
-                        Mentor Sign Up
+                <div id="bannerButton">
+                    <a href="#about">
+                        <i class="fas fa-angle-double-down"></i>
                     </a>
                 </div>
             </div>
-
-            <div id="bannerButton">
-                <a href="#about">
-                    <i class="fas fa-angle-double-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div> <!-- End of top page  -->
 
     <section id="about" class="secondary">
         <div class="container">

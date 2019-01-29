@@ -5,6 +5,7 @@ if (typeof ($) === undefined || typeof ($) === null) {
     " is JavaScript compatible!");
 }
 $(document).ready(function () {
+    
     // Custom jQuery by Eric Q. 
 
     // Load page resources
@@ -50,20 +51,25 @@ $(document).ready(function () {
             alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
         }
     });
-
-    // ScrollReveal().reveal('section');
     
     // Fade in effect  
     $(window).on("load", function () {
         function fade() {
-            var animation_height = $(window).innerHeight() * 0.30;
-            var ratio = Math.round((1 / animation_height) * 10000) / 10000;
+            let animation_height = $(window).innerHeight() * 0.30;
+            let ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
+            // Not optimal since it has to do this for EVERY single DOM object even after opacity = 1
             $('*').each(function () {
-
-                var objectTop = $(this).offset().top;
-                var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-
+                
+                let objectTop = $(this).offset().top;
+                let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                let newOpacity = (windowBottom - objectTop) * ratio;
+                
+                // First check if already shown to shorten render time. 
+                if ($(this).css("opacity") > newOpacity) {
+                    return true;
+                }
+                
                 if (objectTop < windowBottom) {
                     if (objectTop < windowBottom - animation_height) {
                         // $(this).html('fully visible');
@@ -73,10 +79,9 @@ $(document).ready(function () {
                         });
 
                     } else {
-                        // $(this).html('fading in/out');
                         $(this).css({
                             transition: 'opacity 0.25s linear',
-                            opacity: (windowBottom - objectTop) * ratio
+                            opacity: newOpacity
                         });
                     }
                 } else {
@@ -86,11 +91,15 @@ $(document).ready(function () {
                 }
             });
         }
-        $('*').css('opacity', 0);
+        // $('*').not($('#topPage').find('*')).css('opacity', 0);
         fade();
         $(window).scroll(function () { fade(); });
+        
+        $("#apply, #bannerButton").find('*').css({
+            transition: 'opacity 5s linear',
+            opacity: 1
+        });
     });
-
 
     // Detect browser to load the correct svg
     var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)
