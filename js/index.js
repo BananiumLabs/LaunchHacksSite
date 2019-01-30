@@ -62,7 +62,7 @@ $(document).ready(function () {
             let ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
             // Not optimal since it has to do this for EVERY single DOM object even after opacity = 1
-            $('*').each(function () {
+            $('*').not('#loader').each(function () {
                 
                 let objectTop = $(this).offset().top;
                 let windowBottom = $(window).scrollTop() + $(window).innerHeight();
@@ -103,6 +103,8 @@ $(document).ready(function () {
                 }
 
             });
+            // Hide loader
+            document.getElementById("loader").style.display = "none";
         }
         // $('*').not($('#topPage').find('*')).css('opacity', 0);
         fade();
