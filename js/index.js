@@ -52,6 +52,9 @@ $(document).ready(function () {
         }
     });
     
+    function getDocHeight() { var D = document; return Math.max(D.body.scrollHeight, D.documentElement.scrollHeight, D.body.offsetHeight, D.documentElement.offsetHeight, D.body.clientHeight, D.documentElement.clientHeight); }
+
+    let docHeight = getDocHeight();
     // Fade in effect  
     $(window).on("load", function () {
         function fade() {
@@ -83,17 +86,29 @@ $(document).ready(function () {
                             transition: 'opacity 0.25s linear',
                             opacity: newOpacity
                         });
+
+                        if (windowBottom + animation_height >= docHeight) {
+                            // $(window).unbind('scroll');
+                            // When scrolled to very bottom, show remaining elements
+                            $(this).css({
+                                transition: 'opacity 0.25s linear',
+                                opacity: 1
+                            });
+                        }
                     }
                 } else {
                     // $(this).html('not visible');
                     // $(this).css('opacity', 0);
                     // Disable auto hide
                 }
+
             });
         }
         // $('*').not($('#topPage').find('*')).css('opacity', 0);
         fade();
-        $(window).scroll(function () { fade(); });
+        $(window).scroll(function () { 
+            fade(); 
+        });
         
         $("#apply, #bannerButton").find('*').css({
             transition: 'opacity 5s linear',
