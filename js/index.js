@@ -5,6 +5,7 @@ if (typeof ($) === undefined || typeof ($) === null) {
     " is JavaScript compatible!");
 }
 $(document).ready(function () {
+    
     // Custom jQuery by Eric Q. 
 
     // Load page resources
@@ -32,9 +33,90 @@ $(document).ready(function () {
         $('#schedule').load("resources/schedule.html");
     }
 
+    if (document.getElementById("prizes") !== null && document.getElementById("prizes") !== undefined) {
+        $('#prizes').load("resources/prizes.html");
+    }
+
     if (document.getElementById("representativeWrapper") !== null && document.getElementById("representativeWrapper") !== undefined) {
         $('#representativeWrapper').load("resources/representative.html");
     }
+
+    $("#livesite").attr("aria-disabled", true);
+    $("#livesite").append('<span id="disable"> (COMING SOON!)');
+    document.getElementById("livesite").addEventListener('click', function (event) {
+        if (this.classList.contains('disabled')) {
+            event.preventDefault();
+            
+            console.warn("Live site is not enabled yet! Preventing redirect.");
+            alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
+        }
+    });
+    
+    function getDocHeight() { var D = document; return Math.max(D.body.scrollHeight, D.documentElement.scrollHeight, D.body.offsetHeight, D.documentElement.offsetHeight, D.body.clientHeight, D.documentElement.clientHeight); }
+
+    let docHeight = getDocHeight();
+    // Fade in effect  
+    $(window).on("load", function () {
+        function fade() {
+            let animation_height = $(window).innerHeight() * 0.30;
+            let ratio = Math.round((1 / animation_height) * 10000) / 10000;
+
+            // Not optimal since it has to do this for EVERY single DOM object even after opacity = 1
+            $('*').not('#loader').each(function () {
+                
+                let objectTop = $(this).offset().top;
+                let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                let newOpacity = (windowBottom - objectTop) * ratio;
+                
+                // First check if already shown to shorten render time. 
+                if ($(this).css("opacity") > newOpacity) {
+                    return true;
+                }
+                
+                if (objectTop < windowBottom) {
+                    if (objectTop < windowBottom - animation_height) {
+                        // $(this).html('fully visible');
+                        $(this).css({
+                            transition: 'opacity 0.1s linear',
+                            opacity: 1
+                        });
+
+                    } else {
+                        $(this).css({
+                            transition: 'opacity 0.25s linear',
+                            opacity: newOpacity
+                        });
+
+                        if (windowBottom + animation_height >= docHeight) {
+                            // $(window).unbind('scroll');
+                            // When scrolled to very bottom, show remaining elements
+                            $(this).css({
+                                transition: 'opacity 0.25s linear',
+                                opacity: 1
+                            });
+                        }
+                    }
+                } else {
+                    // $(this).html('not visible');
+                    // $(this).css('opacity', 0);
+                    // Disable auto hide
+                }
+
+            });
+            // Hide loader
+            document.getElementById("loader").style.display = "none";
+        }
+        // $('*').not($('#topPage').find('*')).css('opacity', 0);
+        fade();
+        $(window).scroll(function () { 
+            fade(); 
+        });
+        
+        $("#apply, #bannerButton").find('*').css({
+            transition: 'opacity 5s linear',
+            opacity: 1
+        });
+    });
 
     // Detect browser to load the correct svg
     var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)

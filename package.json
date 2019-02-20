@@ -5,7 +5,8 @@
   "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --progress --colors --profile --watch"
+    "start": "webpack-dev-server --progress --colors --profile --watch --open",
+    "update": "node node_modules/npm-check/bin/cli.js -u"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,12 @@
   "homepage": "https://github.com/BananiumLabs/LaunchHacksSite#readme",
   "dependencies": {
     "jquery": "^3.3.1",
-    "vivus": "^0.4.3",
-    "webpack": "^4.11.0",
-    "webpack-cli": "^3.0.2",
-    "webpack-dev-server": "^3.1.10"
+    "vivus": "^0.4.4",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependencies": {
+    "npm-check": "^5.9.0"
   }
 }
