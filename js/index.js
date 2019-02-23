@@ -40,6 +40,10 @@ $(document).ready(function () {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
+    if (document.getElementById("additional") !== null && document.getElementById("additional") !== undefined) {
+        $('#additional').load("resources/additional.html");
+    }
+
     $("#livesite").attr("aria-disabled", true);
     $("#livesite").append('<span id="disable"> (COMING SOON!)');
     document.getElementById("livesite").addEventListener('click', function (event) {

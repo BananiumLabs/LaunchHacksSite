@@ -301,13 +301,13 @@ h4 {
     height: auto;
     width: auto;
     max-width: 30vw;
-    max-height: 10vh;
+    max-height: 15vh;
     align-self: center;
     transition-duration: 1s;
 }
 
 .restrict-sponsor-img {
-   max-width: 20vw;
+   max-width: 25vw;
 }
 
 .sponsor-img:hover {
