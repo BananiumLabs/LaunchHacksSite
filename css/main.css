@@ -301,7 +301,7 @@ h4 {
     height: auto;
     width: auto;
     max-width: 30vw;
-    max-height: 15vh;
+    max-height: 12vh;
     align-self: center;
     transition-duration: 1s;
 }
