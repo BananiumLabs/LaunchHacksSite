@@ -381,6 +381,7 @@ h4 {
     max-width: 10vw;
     max-height: 10vw;
     align-self: center;
+    object-fit: cover;
 }
 
 header.head {
