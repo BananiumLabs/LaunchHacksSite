@@ -53,14 +53,24 @@ $(document).ready(function () {
 
     
     document.getElementById("hackerSignup").addEventListener('click', function (event) {
-        let currentDate = new Date();
+        let offset = 420;
+        let offsetMillis = offset * 60 * 1000;
+        let today = new Date();
+        let millis = today.getTime();
+        let timeZoneOffset = (today.getTimezoneOffset() * 60 * 1000);
+        let pst = millis - offsetMillis;
+        let currentDate = new Date(pst);
+        currentDate.setHours(currentDate.getHours() + 7);
+        console.info("PST Time : " + currentDate.toUTCString());
+        console.info("Local Time : " + new Date(today.getTime() - timeZoneOffset).toUTCString());
+        console.info("PST CONVERTED: " + currentDate);
         let timeYear = currentDate.getFullYear();
         let timeMonth = currentDate.getMonth() + 1;
         let timeDate = currentDate.getDate();
         console.warn("In time limit mode.");
-        console.warn("year: " + timeYear);
-        console.warn("month: " + timeMonth);
-        console.warn("date: " + timeDate);
+        console.info("year: " + timeYear);
+        console.info("month: " + timeMonth);
+        console.info("day: " + timeDate);
         if(timeYear != 2019) {
             event.preventDefault();
             alert("LaunchHacks I 2019 has ended! Please wait for LaunchHacks II to come online.");
