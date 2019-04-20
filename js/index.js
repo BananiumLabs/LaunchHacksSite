@@ -51,6 +51,26 @@ $(document).ready(function () {
         }
     });
 
+    
+    document.getElementById("hackerSignup").addEventListener('click', function (event) {
+        let currentDate = new Date();
+        let timeYear = currentDate.getFullYear();
+        let timeMonth = currentDate.getMonth() + 1;
+        let timeDate = currentDate.getDate();
+        console.warn("In time limit mode.");
+        console.warn("year: " + timeYear);
+        console.warn("month: " + timeMonth);
+        console.warn("date: " + timeDate);
+        if(timeYear != 2019) {
+            event.preventDefault();
+            alert("LaunchHacks I 2019 has ended! Please wait for LaunchHacks II to come online.");
+        }
+        else if(timeMonth > 4 || timeDate > 20) {
+            event.preventDefault();
+            alert("Priority registration deadline has passed. Please email contact@launchhacks.tech to sign up!");
+        }
+    });
+
     // Detect browser to load the correct svg
     var bannerFile = '../img/banner-animated.svg'; //default (Chrome/Opera)
     if (typeof InstallTrigger !== 'undefined')  { //Firefox 
