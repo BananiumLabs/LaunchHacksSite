@@ -16,10 +16,19 @@
 }
 
 
+
+.under-construction img {
+    max-width: 70%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+@media only screen and (min-width: 1024px) {
     .under-construction img {
         max-width: 70%;
         padding: 5vw 10vw 5vw 10vw;
     }
+}
 
 .under-construction img {
     font-family: 'Barlow' !important;
