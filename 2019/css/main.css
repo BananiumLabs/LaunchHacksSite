@@ -12,34 +12,16 @@
     height: 100%;
     width: 100%;
     overflow-y: hidden;
-    font-family: 'Quicksand', 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
-}
-
-
-
-.under-construction img {
-    max-width: 70%;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-}
-
-@media only screen and (min-width: 1024px) {
-    .under-construction img {
-        max-width: 70%;
-        padding: 5vw 10vw 5vw 10vw;
-    }
 }
 
 .under-construction img {
-    font-family: 'Barlow' !important;
+    max-width: 90%;
 }
-
-
 
 /* *****************
  * * GLOBAL STYLES *
  * ***************** */
-
+ 
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
     overflow-y: visible;
@@ -72,8 +54,7 @@ footer {
     text-align: right;
 }
 
-#schedule,
-#prizes {
+#schedule, #prizes {
     /* overflow-x: scroll; */
 }
 
@@ -87,8 +68,8 @@ footer {
  * * FONTS AND SIZING *
  * ******************** */
 
-h2 {
-    font-family: Catamaran, Helvetica, Arial, sans-serif;
+ h2 {
+    font-family: Catamaran,Helvetica,Arial,sans-serif;
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -122,11 +103,10 @@ h4 {
 }
 
 /* Computers */
-@media only screen and (orientation: landscape) and (min-width: 800px) {
-    h2 {
+ @media only screen and (orientation: landscape) and (min-width: 800px) {
+     h2 {
         font-size: 50px !important;
-    }
-
+     }
     #bannerInfo h3 {
         font-size: 8vh;
     }
@@ -138,17 +118,17 @@ h4 {
     .float-right-not-mobile {
         float: right !important;
     }
-}
+ }
 
 /* **********
  * * BANNER *
  * ********** */
 
-#banner svg {
+ #banner svg {
     height: 120%;
-}
+ }
 
-#banner {
+ #banner {
     opacity: 0;
     animation: 1s ease-in-out 0s 1 banner-icon forwards;
     width: 100%;
@@ -161,8 +141,10 @@ h4 {
 
     /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
     background:
-        linear-gradient(rgba(255, 255, 255, 0.25),
-        rgba(255, 255, 255, 0.25)),
+        linear-gradient(
+      rgba(255, 255, 255, 0.25), 
+      rgba(255, 255, 255, 0.25)
+    ),
 
         url('../img/banner-background.jpg');
 
@@ -174,8 +156,7 @@ h4 {
 }
 
 
-#bannerLogo,
-#bannerLogo2 {
+#bannerLogo, #bannerLogo2 {
     display: block;
     cursor: default;
     height: 55vh;
@@ -200,10 +181,9 @@ h4 {
 }
 
 #link-buttons .link-btn {
-    font-size: 5vw;
+   font-size: 5vw;
     color: rgb(37, 37, 37);
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
@@ -220,8 +200,7 @@ h4 {
 #bannerButton {
     opacity: 0;
     animation: 1s ease-in-out 2s 1 banner-icon forwards;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
@@ -230,16 +209,14 @@ h4 {
     width: auto;
 }
 
-#bannerButton:hover,
-#apply a:hover {
+#bannerButton:hover, #apply a:hover {
     transform: scale(1.25);
 }
 
 #apply a {
     margin-left: 1vw;
     margin-right: 1vw;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
@@ -252,53 +229,30 @@ h4 {
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} 
 
 @keyframes banner-icon {
-    to {
-        opacity: 1
-    }
+    to {opacity: 1}
 }
-
 @-webkit-keyframes banner-icon {
-    to {
-        opacity: 1
-    }
+    to {opacity: 1}
 }
-
 @-moz-keyframes banner-icon {
-    to {
-        opacity: 1
-    }
+    to {opacity: 1}
 }
 
 /* *************
@@ -311,9 +265,9 @@ h4 {
     text-shadow: #bfceff 1px 1px 0;
     color: rgb(1, 124, 212);
 }
-
+ 
 ::-moz-selection {
-    background: transparent;
+   background: transparent;
     font-style: oblique;
     text-shadow: #bfceff 1px 1px 0;
     color: rgb(1, 124, 212);
@@ -326,8 +280,7 @@ h4 {
     background-color: white;
     border-bottom: none;
     font-size: 2.5vh;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
@@ -354,7 +307,7 @@ h4 {
 }
 
 .restrict-sponsor-img {
-    max-width: 25vw;
+   max-width: 25vw;
 }
 
 .sponsor-img:hover {
@@ -389,18 +342,17 @@ header.head .header-content {
     text-align: center;
 }
 
-header.head .device-container {
+header.head .device-container{
     max-width: 325px;
     margin-right: auto;
     margin-left: auto;
-
+    
 }
 
 .team-icon {
     font-size: 1rem;
     color: rgb(37, 37, 37);
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 
@@ -408,8 +360,7 @@ header.head .device-container {
     transform: scale(1.1);
 }
 
-.team-wrapper p,
-.team-wrapper h3 {
+.team-wrapper p, .team-wrapper h3 {  
     margin-bottom: 0.3rem;
 }
 
@@ -421,24 +372,22 @@ header.head .device-container {
 /* *******
  * * NAV *
  * ******* */
-nav {
+ nav {
     /* Box-shadow adopted from Materialize */
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-}
+      -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+ }
+ nav img {
+     max-height: 5vh;
+     margin-right: 1.5vw;
+ }
 
-nav img {
-    max-height: 5vh;
-    margin-right: 1.5vw;
-}
-
-.navbar-toggler {
-    border-color: transparent !important;
-    color: black !important;
-}
-
+ .navbar-toggler {
+     border-color: transparent !important;
+     color: black !important;
+ }
 /*Trayce*/
-.btn-gudbutton {
+ .btn-gudbutton {
     background: #0055ff;
     border: 2px solid #0055ff;
     font-size: 15px;
@@ -450,11 +399,10 @@ nav img {
     transition: 0.5s;
     margin: 10px;
     color: #fff;
-}
-
-.btn-gudbutton:hover {
+ }
+ .btn-gudbutton:hover {
     background: #ffffff;
-    border: #0055ff;
+    border:#0055ff;
     color: rgb(0, 34, 255);
-
-}
+  
+  }
