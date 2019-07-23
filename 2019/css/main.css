@@ -1,0 +1,460 @@
+/*
+###############################################################
+# Created by Ben Cuan, Eric Qian, Akash Basu, Vikram Peddinti #
+#                      LaunchHacks Site                       #
+###############################################################
+*/
+
+/* TEMP */
+.under-construction {
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    font-family: 'Quicksand', 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
+}
+
+
+
+.under-construction img {
+    max-width: 70%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+@media only screen and (min-width: 1024px) {
+    .under-construction img {
+        max-width: 70%;
+        padding: 5vw 10vw 5vw 10vw;
+    }
+}
+
+.under-construction img {
+    font-family: 'Barlow' !important;
+}
+
+
+
+/* *****************
+ * * GLOBAL STYLES *
+ * ***************** */
+
+* {
+    font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
+    overflow-y: visible;
+}
+
+section {
+    overflow-x: hidden;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+footer {
+    background-color: #ef6c00;
+    bottom: 0;
+    width: 100%;
+    height: 3vh;
+    box-shadow: 0 50vh 0 50vh #ef6c00;
+}
+
+.center-align {
+    align-content: center;
+}
+
+.secondary {
+    background: rgb(223, 240, 253);
+}
+
+.right-align {
+    float: right;
+    text-align: right;
+}
+
+#schedule,
+#prizes {
+    /* overflow-x: scroll; */
+}
+
+@media only screen and (min-width: 600px) {
+    #representatives {
+        padding-bottom: 8vh;
+    }
+}
+
+/* ********************
+ * * FONTS AND SIZING *
+ * ******************** */
+
+h2 {
+    font-family: Catamaran, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-weight: 150;
+}
+
+/* Tablets and Phones */
+@media only screen and (orientation: portrait) and (max-width: 800px) {
+    h2 {
+        font-size: 40px !important;
+    }
+
+    #bannerInfo h3 {
+        font-size: 6vh;
+    }
+
+    h4 {
+        font-size: 20px !important;
+    }
+
+    .float-right-not-mobile {
+        float: left !important;
+    }
+
+    h6 {
+        margin-bottom: 0 !important;
+        margin-top: 0.5vh;
+    }
+}
+
+/* Computers */
+@media only screen and (orientation: landscape) and (min-width: 800px) {
+    h2 {
+        font-size: 50px !important;
+    }
+
+    #bannerInfo h3 {
+        font-size: 8vh;
+    }
+
+    h4 {
+        font-size: 30px !important;
+    }
+
+    .float-right-not-mobile {
+        float: right !important;
+    }
+}
+
+/* **********
+ * * BANNER *
+ * ********** */
+
+#banner svg {
+    height: 120%;
+}
+
+#banner {
+    opacity: 0;
+    animation: 1s ease-in-out 0s 1 banner-icon forwards;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+
+    /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.25),
+        rgba(255, 255, 255, 0.25)),
+
+        url('../img/banner-background.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#bannerLogo,
+#bannerLogo2 {
+    display: block;
+    cursor: default;
+    height: 55vh;
+    width: 100vw;
+    text-align: center;
+}
+
+
+#bannerInfo {
+    text-align: center;
+    transform: translateY(-8vh);
+    font-size: 8vh;
+    min-height: 20vh;
+    z-index: 0;
+    opacity: 0;
+    animation: 1s ease-in-out 2s 1 banner-icon forwards;
+}
+
+#link-buttons {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#link-buttons .link-btn {
+    font-size: 5vw;
+    color: rgb(37, 37, 37);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.link-btn:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (orientation: portrait) and (max-width: 800px) {
+    .mobile-width-fix {
+        max-width: 15vw;
+    }
+}
+
+#bannerButton {
+    opacity: 0;
+    animation: 1s ease-in-out 2s 1 banner-icon forwards;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+#bannerButton a {
+    color: #0091FA !important;
+    width: auto;
+}
+
+#bannerButton:hover,
+#apply a:hover {
+    transform: scale(1.25);
+}
+
+#apply a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.banner-text-primary {
+    color: #0091FA;
+}
+
+.banner-text-secondary {
+    color: #0066B1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes banner-icon {
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes banner-icon {
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes banner-icon {
+    to {
+        opacity: 1
+    }
+}
+
+/* *************
+ * * SELECTION *
+ * ************* */
+
+::selection {
+    background: transparent;
+    font-style: oblique;
+    text-shadow: #bfceff 1px 1px 0;
+    color: rgb(1, 124, 212);
+}
+
+::-moz-selection {
+    background: transparent;
+    font-style: oblique;
+    text-shadow: #bfceff 1px 1px 0;
+    color: rgb(1, 124, 212);
+}
+
+/* *******
+ * * FAQ *
+ * ******* */
+.card-header {
+    background-color: white;
+    border-bottom: none;
+    font-size: 2.5vh;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.card {
+    border: 0.5vh;
+}
+
+.card-header:hover {
+    font-size: 2.7vh;
+    color: #0066B1;
+}
+
+/* ************
+ * * SPONSORS *
+ * ************ */
+.sponsor-img {
+    margin: 2vh;
+    height: auto;
+    width: auto;
+    max-width: 30vw;
+    max-height: 12vh;
+    align-self: center;
+    transition-duration: 1s;
+}
+
+.restrict-sponsor-img {
+    max-width: 25vw;
+}
+
+.sponsor-img:hover {
+    transform: scale(1.2);
+}
+
+/* ********
+ * * TEAM *
+ * ******** */
+.team-img {
+    margin: 2vh;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    max-width: 10vw;
+    max-height: 10vw;
+    align-self: center;
+    object-fit: cover;
+}
+
+header.head {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background: #ffffff;
+}
+
+header.head .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+header.head .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.team-icon {
+    font-size: 1rem;
+    color: rgb(37, 37, 37);
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.team-icon:hover {
+    transform: scale(1.1);
+}
+
+.team-wrapper p,
+.team-wrapper h3 {
+    margin-bottom: 0.3rem;
+}
+
+#member {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+/* *******
+ * * NAV *
+ * ******* */
+nav {
+    /* Box-shadow adopted from Materialize */
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+    max-height: 5vh;
+    margin-right: 1.5vw;
+}
+
+.navbar-toggler {
+    border-color: transparent !important;
+    color: black !important;
+}
+
+/*Trayce*/
+.btn-gudbutton {
+    background: #0055ff;
+    border: 2px solid #0055ff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+}
+
+.btn-gudbutton:hover {
+    background: #ffffff;
+    border: #0055ff;
+    color: rgb(0, 34, 255);
+
+}
