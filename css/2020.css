@@ -1,0 +1,87 @@
+/* LaunchHacks II CSS */
+
+body {
+    position: relative;
+
+}
+
+.menu-circle {
+    /* Center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 0;
+    position: absolute;
+    justify-content: center;
+}
+
+.menu-icon {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: transparent;
+}
+
+.menu-text {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+#center-circle {
+    height: 40vh;
+    width: 40vh;
+}
+
+.sub-circle {
+    height: 20vh;
+    width: 20vh;
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+.sub-circle:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+#circle-about {
+    left: calc(50% - 36vh);
+}
+
+#circle-socials {
+    left: calc(50% + 36vh);
+}
+
+#circle-contact {
+    top: calc(50% + 26vh);
+    left: calc(50% + 26vh);
+}
+
+#circle-register {
+    top: calc(50% - 26vh);
+    left: calc(50% - 26vh);
+}
+
+#circle-resources {
+    top: calc(50% - 26vh);
+    left: calc(50% + 26vh);
+}
+
+#circle-faq {
+    top: calc(50% + 36vh);
+}
+
+#circle-sponsors {
+    top: calc(50% - 36vh);
+}
+
+#circle-organizers {
+    top: calc(50% + 26vh);
+    left: calc(50% - 26vh);
+}
