@@ -9,7 +9,8 @@ https://launchhacks.tech
 Live site: https://live.launchhacks.tech
 
 ## Coded by
- - [Ben Cuan (dbqeo)](https://github.com/dbqeo)
+ - [Ben Cuan (64bitpandas)](https://github.com/dbqeo)
  - [Eric Qian (EnumC)](https://github.com/EnumC)
  - [Akash Basu (Fujax)](https://github.com/Fujax)
  - [Vikram Peddinti (DarkFlameX1)](https://github.com/DarkFlameX1)
+ - [Pradyun Narkadamilli (pradyungn)](https://github.com/pradyungn)
