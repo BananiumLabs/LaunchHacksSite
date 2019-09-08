@@ -1,6 +1,6 @@
 # LaunchHacksSite
 
-Website for LaunchHacks I, taking place in February 2019.
+Website for LaunchHacks II, taking place in February 2019.
 
 This repository contains all past, present, and future websites for LaunchHacks, as well as the Live Site.
 
