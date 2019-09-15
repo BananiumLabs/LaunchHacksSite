@@ -14,3 +14,4 @@ Live site: https://live.launchhacks.tech
  - [Akash Basu (Fujax)](https://github.com/Fujax)
  - [Vikram Peddinti (DarkFlameX1)](https://github.com/DarkFlameX1)
  - [Pradyun Narkadamilli (pradyungn)](https://github.com/pradyungn)
+ - [Neel Redkar (Hacker719)](https://github.com/Hacker719)

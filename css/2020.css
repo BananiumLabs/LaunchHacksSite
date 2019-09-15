@@ -8,6 +8,35 @@ body {
     position: relative;
 
 }
+/* *****************
+ * * GLOBAL *
+ * ***************** */
+*{
+    font-family: 'DM Sans', sans-serif;
+    overflow-y: visible;
+}
+#banner {
+    opacity: 10;
+    width: 96%;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+
+    background:
+        linear-gradient(rgba(0, 2, 255, 0.25),
+        rgba(255, 255, 255, 0.25)),
+
+        url('../img/sunset-sky.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .menu-circle {
     /* Center */
