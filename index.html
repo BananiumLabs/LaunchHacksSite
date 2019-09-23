@@ -2,9 +2,6 @@
 <!-- UNDER CONSTRUCTION SITE -->
 
 <style>
-    * {
-        background-color: white;
-    }
 </style>
 
 <head>
@@ -18,43 +15,59 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/2020.css" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.10.1/js/all.js" crossorigin="anonymous"></script>
+    <script defer src="js/2020.js"></script>
     <link href="css/2020.css" rel="stylesheet">
     <link rel="icon" type="image.png" href="img/logo-no-shadow.png">
 </head>
 
 <body>
-    <div class="sub-circle menu-circle" id="circle-about">
-        <i class="fas fa-info-circle fa-2x menu-icon"></i>
-        <p class="menu-text">About</p>
+    <div id="shown">
+        <div class="sub-circle menu-circle" id="circle-about">
+            <i class="fas fa-info-circle fa-2x menu-icon"></i>
+            <p class="menu-text">About</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-faq">
+            <i class="fas fa-question fa-2x menu-icon"></i>
+            <p class="menu-text">FAQ</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-organizers">
+            <i class="fas fa-user fa-2x menu-icon"></i>
+            <p class="menu-text">Team</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-resources">
+            <i class="fas fa-scroll fa-2x menu-icon"></i>
+            <p class="menu-text">Resources</p>
+        </div>
+        <div id="center-circle" class="menu-circle"></div>
+        <div class="sub-circle menu-circle" id="circle-sponsors">
+            <i class="fas fa-money-check-alt fa-2x menu-icon"></i>
+            <p class="menu-text">Sponsors</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-register">
+            <i class="fas fa-pencil-alt fa-2x menu-icon"></i>
+            <p class="menu-text">Register</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-contact">
+            <i class="fas fa-envelope-open-text fa-2x menu-icon"></i>
+            <p class="menu-text">Contact</p>
+        </div>
+        <div class="sub-circle menu-circle" id="circle-socials">
+            <i class="fas fa-user-friends fa-2x menu-icon"></i>
+            <p class="menu-text">Social Media</p>
+        </div>
     </div>
-    <div class="sub-circle menu-circle" id="circle-faq">
-        <i class="fas fa-question fa-2x menu-icon"></i>
-        <p class="menu-text">FAQ</p>
-    </div>
-    <div class="sub-circle menu-circle" id="circle-organizers">
-        <i class="fas fa-user fa-2x menu-icon"></i>
-        <p class="menu-text">Team</p>
-    </div>
-    <div class="sub-circle menu-circle" id="circle-resources">
-        <i class="fas fa-scroll fa-2x menu-icon"></i>
-        <p class="menu-text">Resources</p>
-    </div>
-    <div id="center-circle" class="menu-circle"></div>
-    <div class="sub-circle menu-circle" id="circle-sponsors">
-        <i class="fas fa-money-check-alt fa-2x menu-icon"></i>
-        <p class="menu-text">Sponsors</p>
-    </div>
-    <div class="sub-circle menu-circle" id="circle-register">
-        <i class="fas fa-pencil-alt fa-2x menu-icon"></i>
-        <p class="menu-text">Register</p>
-    </div>
-    <div class="sub-circle menu-circle" id="circle-contact">
-        <i class="fas fa-envelope-open-text fa-2x menu-icon"></i>
-        <p class="menu-text">Contact</p>
-    </div>
-    <div class="sub-circle menu-circle" id="circle-socials">
-        <i class="fas fa-user-friends fa-2x menu-icon"></i>
-        <p class="menu-text">Social Media</p>
+    <!--NOW ARE HIDDEN ONES-->
+    <div id="text-about" class="hidden">
+        <article class="popup">
+            <div class="popup-header">
+                <div id="close-about">
+                <i class="fas fa-window-close fa-2x"></i>
+                </div>
+            </div>
+            <div class="popup-body">
+             <h1>About</h1>
+            </div>
+        </article>
     </div>
 </body>
 
