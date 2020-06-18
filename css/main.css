@@ -24,7 +24,8 @@
  
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
-    overflow-y: visible;
+    /* overflow-y: visible; */
+    overflow-x: hidden;
 }
 
 section {
@@ -38,6 +39,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 3vh;
+    padding-top: 0.5vh;
     box-shadow: 0 50vh 0 50vh #ef6c00;
 }
 
@@ -191,6 +193,10 @@ h4 {
     transform: scale(1.1);
 }
 
+.media-btn {
+    height: 100%;
+}
+
 @media only screen and (orientation: portrait) and (max-width: 800px) {
     .mobile-width-fix {
         max-width: 15vw;
@@ -307,11 +313,15 @@ h4 {
 }
 
 .restrict-sponsor-img {
-   max-width: 25vw;
+   max-width: 20vw;
 }
 
 .sponsor-img:hover {
     transform: scale(1.2);
+}
+
+.sponsor-header {
+    margin-top: 5vh;
 }
 
 /* ********
