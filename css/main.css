@@ -12,29 +12,23 @@
     height: 100%;
     width: 100%;
     overflow-y: hidden;
-    font-family: 'Quicksand', 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
-}
-
-
-
-.under-construction img {
-    max-width: 70%;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
-}
-
-@media only screen and (min-width: 1024px) {
-    .under-construction img {
-        max-width: 70%;
-        padding: 5vw 10vw 5vw 10vw;
-    }
 }
 
 .under-construction img {
-    font-family: 'Barlow' !important;
+    max-width: 90%;
 }
 
-
+#archive-banner {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    z-index: 100000;
+    background-color: #ffc696;
+    font-size: 120%;
+    padding-top: 1vh;
+    transition-duration: 1s;
+}
 
 /* *****************
  * * GLOBAL STYLES *
@@ -42,7 +36,8 @@
 
 * {
     font-family: 'Barlow', sans-serif, 'Courier New', 'Courier', 'monospace';
-    overflow-y: visible;
+    /* overflow-y: visible; */
+    overflow-x: hidden;
 }
 
 section {
@@ -56,6 +51,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 3vh;
+    padding-top: 0.5vh;
     box-shadow: 0 50vh 0 50vh #ef6c00;
 }
 
@@ -70,11 +66,6 @@ footer {
 .right-align {
     float: right;
     text-align: right;
-}
-
-#schedule,
-#prizes {
-    /* overflow-x: scroll; */
 }
 
 @media only screen and (min-width: 600px) {
@@ -162,7 +153,7 @@ h4 {
     /* Background image - tinting adopted from https://css-tricks.com/tinted-images-multiple-backgrounds/*/
     background:
         linear-gradient(rgba(255, 255, 255, 0.25),
-        rgba(255, 255, 255, 0.25)),
+            rgba(255, 255, 255, 0.25)),
 
         url('../img/banner-background.jpg');
 
@@ -181,6 +172,7 @@ h4 {
     height: 55vh;
     width: 100vw;
     text-align: center;
+    overflow-y: hidden;
 }
 
 
@@ -209,6 +201,10 @@ h4 {
 
 .link-btn:hover {
     transform: scale(1.1);
+}
+
+.media-btn {
+    height: 100%;
 }
 
 @media only screen and (orientation: portrait) and (max-width: 800px) {
@@ -354,11 +350,15 @@ h4 {
 }
 
 .restrict-sponsor-img {
-    max-width: 25vw;
+    max-width: 20vw;
 }
 
 .sponsor-img:hover {
     transform: scale(1.2);
+}
+
+.sponsor-header {
+    margin-top: 5vh;
 }
 
 /* ********

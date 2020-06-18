@@ -40,16 +40,16 @@ $(document).ready(function () {
         $('#representativeWrapper').load("resources/representative.html");
     }
 
-    $("#livesite").attr("aria-disabled", true);
-    $("#livesite").append('<span id="disable"> (COMING SOON!)');
-    document.getElementById("livesite").addEventListener('click', function (event) {
-        if (this.classList.contains('disabled')) {
-            event.preventDefault();
+    // $("#livesite").attr("aria-disabled", true);
+    // $("#livesite").append('<span id="disable"> (COMING SOON!)');
+    // document.getElementById("livesite").addEventListener('click', function (event) {
+    //     if (this.classList.contains('disabled')) {
+    //         event.preventDefault();
             
-            console.warn("Live site is not enabled yet! Preventing redirect.");
-            alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
-        }
-    });
+    //         console.warn("Live site is not enabled yet! Preventing redirect.");
+    //         alert("Hold on! The event has not started yet. Please revisit when the event has commenced. :)");
+    //     }
+    // });
 
     
     document.getElementById("hackerSignup").addEventListener('click', function (event) {
@@ -129,8 +129,14 @@ $(document).ready(function () {
         // appears
         if ($(this).scrollTop() > 100) {
             $('.navbar').fadeIn();
+            $('#archive-banner').css({
+                'margin-top': '6vh'
+            });
         } else {
             $('.navbar').fadeOut();
+            $('#archive-banner').css({
+                'margin-top': '0vh'
+            });
         }
     });
 
