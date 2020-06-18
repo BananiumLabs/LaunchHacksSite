@@ -129,8 +129,14 @@ $(document).ready(function () {
         // appears
         if ($(this).scrollTop() > 100) {
             $('.navbar').fadeIn();
+            $('#archive-banner').css({
+                'margin-top': '6vh'
+            });
         } else {
             $('.navbar').fadeOut();
+            $('#archive-banner').css({
+                'margin-top': '0vh'
+            });
         }
     });
 
