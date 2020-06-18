@@ -68,11 +68,6 @@ footer {
     text-align: right;
 }
 
-#schedule,
-#prizes {
-    /* overflow-x: scroll; */
-}
-
 @media only screen and (min-width: 600px) {
     #representatives {
         padding-bottom: 8vh;
