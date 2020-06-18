@@ -1,12 +1,12 @@
 # LaunchHacksSite
 
-Website for LaunchHacks I, taking place in February 2019.
+Website for LaunchHacks I, which took place in April 2019.
 
-This repository contains all past, present, and future websites for LaunchHacks, as well as the Live Site.
+Unfortunately, LaunchHacks has been discontinued, and thus this website has been archived at https://launchhacks.bananiumlabs.com. We'd like to thank all of our wonderful sponsors, mentors, judges, participants, and team members who made LaunchHacks I awesome!
 
-https://launchhacks.tech
+## Running locally
 
-Live site: https://live.launchhacks.tech
+To run locally, `npm i -g live-server` if you don't have it already, then run `live-server` in the project directory.
 
 ## Coded by
  - [Ben Cuan (dbqeo)](https://github.com/dbqeo)
