@@ -22,11 +22,12 @@
     width: 100%;
     position: fixed;
     top: 0;
-    height: 5vh;
+    /* height: 5vh; */
     z-index: 100000;
     background-color: #ffc696;
     font-size: 120%;
     padding-top: 1vh;
+    padding-bottom: 1vh;
     transition-duration: 1s;
 }
 
@@ -103,7 +104,7 @@ h4 {
     }
 
     .float-right-not-mobile {
-        float: left !important;
+        padding-left: 10vw !important;
     }
 
     h6 {

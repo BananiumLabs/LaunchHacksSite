@@ -2,7 +2,7 @@
 
 Website for LaunchHacks I, which took place in April 2019.
 
-Unfortunately, LaunchHacks has been discontinued, and thus this website has been archived at https://launchhacks.bananiumlabs.com. We'd like to thank all of our wonderful sponsors, mentors, judges, participants, and team members who made LaunchHacks I awesome!
+Since LaunchHacks has completed, this website has been archived at https://launchhacks.bananiumlabs.com. We'd like to thank all of our wonderful sponsors, mentors, judges, participants, and team members who made LaunchHacks I awesome!
 
 ## Running locally
 
